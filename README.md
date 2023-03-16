@@ -34,11 +34,11 @@ Modelo Lógico: <br>
 
 ### Tela de Reserva
 ![RESERVA](https://user-images.githubusercontent.com/101409419/225489966-c22c26a1-2d56-4713-bca0-5cdf4161daff.png)
+
 ### Tela de login
-]
-### Tela Login
 ![LOGIN](https://user-images.githubusercontent.com/113261440/225491960-b96e93d9-fffb-4f82-b223-4a2896f0b3f8.png)
 
 ### Tela Sobre
 ![TelaSobre](https://user-images.githubusercontent.com/99230983/225492891-5f56339f-c44b-4285-a360-9f98a8610636.png)
 
+[Projeto Integrador III - Restaurante - Turma B]
