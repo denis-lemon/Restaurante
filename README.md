@@ -9,7 +9,8 @@
 - Alteração da Reserva (Funcionário)
 - Alteração do cardápio (Funcionário)
 
-![Diagrama de caso de uso - Restaurante](C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\ProjetoIntegradorIII\Diagrama de Caso de uso - Restaurante.jpeg)
+![Diagrama de Caso de uso - Restaurante](https://user-images.githubusercontent.com/99230983/225476029-5dcf0992-76ed-495e-bde8-051c15c731e1.jpeg)
+
 
 
 [PROJETO INTEGRADOR III - Turma B]
