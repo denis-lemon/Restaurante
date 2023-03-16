@@ -21,5 +21,6 @@ Modelo Conceitual:
 
 <br>
 Modelo Lógico:
-![Modelo_logico_restaurante](https://user-images.githubusercontent.com/91094630/225478094-ce4572e5-ac36-4988-aeaf-e86a976fcb91.jpg)
+![Modelo_logico_restaurante](https://user-images.githubusercontent.com/91094630/225478252-80ab5bd7-06b4-482e-b9ff-083ce7d24c95.jpg)
+
 
