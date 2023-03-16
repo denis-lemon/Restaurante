@@ -29,8 +29,8 @@ Modelo Lógico: <br>
 
 ## Prototipação Higth Fidelity
 
-#  Tela de Cardápio
+### Tela de Cardápio
 ![CARDÁPIO](https://user-images.githubusercontent.com/101409419/225489726-14e4e043-f5d5-40ac-b85d-5e02c4fed120.png)
 
-# Tela de Reserva
+### Tela de Reserva
 ![RESERVA](https://user-images.githubusercontent.com/101409419/225489966-c22c26a1-2d56-4713-bca0-5cdf4161daff.png)
