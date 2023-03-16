@@ -13,7 +13,7 @@
 
 
 
-[PROJETO INTEGRADOR III - Turma B]
+
 
 ### MER: <br>
 Modelo Conceitual:
@@ -23,4 +23,7 @@ Modelo Conceitual:
 Modelo Lógico: <br>
 ![Modelo_logico_restaurante](https://user-images.githubusercontent.com/91094630/225478252-80ab5bd7-06b4-482e-b9ff-083ce7d24c95.jpg)
 
+### Prototipação Low Fidelity
+
+![Restaurante_PI](https://user-images.githubusercontent.com/99230983/225489050-47b6f994-a5b9-4911-bebe-d7d62360b315.png)
 
