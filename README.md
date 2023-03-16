@@ -15,7 +15,7 @@
 
 [PROJETO INTEGRADOR III - Turma B]
 
-###MER: 
-  Modelo Conceitual:
+###MER: <br>
+Modelo Conceitual:
 ![Modelo_conceitual_restaurante](https://user-images.githubusercontent.com/93954117/225476886-dd84ac6f-4409-4cd9-a77b-3172cd894dcf.JPG)
 
