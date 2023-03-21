@@ -28,6 +28,8 @@ Modelo Lógico: <br>
 ![Restaurante_PI](https://user-images.githubusercontent.com/99230983/225489050-47b6f994-a5b9-4911-bebe-d7d62360b315.png)
 
 ## Prototipação Higth Fidelity
+### Tela de Home
+![Home](https://user-images.githubusercontent.com/110983337/226496151-866540e4-4610-4790-986a-8ac9cfb8ffc9.png)
 
 ### Tela de Cardápio
 ![CARDÁPIO](https://user-images.githubusercontent.com/101409419/225489726-14e4e043-f5d5-40ac-b85d-5e02c4fed120.png)
