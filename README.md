@@ -11,8 +11,9 @@
 
 ![Diagrama de Caso de uso - Restaurante](https://user-images.githubusercontent.com/99230983/225476029-5dcf0992-76ed-495e-bde8-051c15c731e1.jpeg)
 
+##Primeiro MER
 
-
+![Captura de Tela (3)](https://user-images.githubusercontent.com/99230983/227733993-1e32990a-fc73-4093-8884-41c5b14d5451.png)
 
 
 ### MER: <br>
