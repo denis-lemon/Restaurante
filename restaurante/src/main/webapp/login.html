@@ -5,34 +5,69 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <title>Login</title>
 </head>
 <body>
-<header>
-    <nav>
+
+<header class="containerHeader">
+    <div>
+    <nav class="navCadastro">
         <ul>
-            <li> Acesse seu <a href="login.html">Login</a></li>
-            <li> Ou <a href="Cadastro.html">Cadastre se</a></li>
+            <li class="LoginECadastro"> Acesse seu <a href="login.html">Login</a></li>
+            <li class="LoginECadastro"> Ou <a href="Cadastro.html">Cadastre se</a></li>
         </ul>
+        </nav>
+    <nav class="navOpcoes">
          <ul>
-             <li><a href="Sobre.html">Sobre</a></li>
-             <li><a href="Cardapio.html">Cardápio</a></li>
-             <li><a href="Reservas.html">Reservas</a></li>
+             <li class="fonteCabecalho"><a  href="Sobre.html">Sobre</a></li>
+             <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
+             <li class="fonteCabecalho"><a  href="Reservas.html">Reservas</a></li>
          </ul>
+        </nav>
+        <nav class="home">
         <ul>
-            <li><a href="Home.html">Home</a></li>
+            <a href="Home.html">Home</a>
         </ul>
-    </nav>
+            </nav>
+    </div>
 </header>
 <main>
+    <div class="container">
+        <div class="card">
 <h2>Login</h2>
-    <form>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
-        <label for="password">Senha:</label>
-        <input type="password" name="password" id="password">
-        <button id="submit">Entrar</button>
+    <form method="get" action="/login" >
+        <div class="label-float">
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email">
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password">
+        </div>
+<div>
+    <a class="esqueceuSenha" href="EsqueceuSenha.html">Esqueceu sua senha?</a>
+</div>
+        <div class="justify-center">
+            <button id="submit">Entrar</button>
+        </div>
+
+        <div class="justify-center">
+            <hr>
+        </div>
+
+        <p class="semConta">Não tem uma conta?
+
+              <a class="cadastreSe" href="Cadastro.html">Cadastre se</a></p>
     </form>
+            </div>
+    </div>
+
 </main>
+
+<footer class="Rodape">
+
+    <h4>Todos os direitos reservados</h4>
+</footer>
+
 </body>
 </html>

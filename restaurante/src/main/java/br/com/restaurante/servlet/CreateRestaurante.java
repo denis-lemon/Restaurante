@@ -18,6 +18,6 @@ public class CreateRestaurante extends HttpServlet {
 
         System.out.println("Email" + email + "Senha: " + senha);
 
-        request.getRequestDispatcher("reserva.html").forward(request, response);
+        //request.getRequestDispatcher("Reserva.html").forward(request, response);
     }
 }
