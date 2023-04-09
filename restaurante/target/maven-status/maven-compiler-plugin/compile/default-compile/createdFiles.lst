@@ -1,0 +1,3 @@
+br\com\shirtstore\servlet\CreateClientServlet.class
+br\com\shirtstore\model\Client.class
+br\com\shirtstore\dao\ClientDao.class
