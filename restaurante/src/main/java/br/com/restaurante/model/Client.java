@@ -1,4 +1,4 @@
-package br.com.shirtstore.model;
+package br.com.restaurante.model;
 
 public class Client {
 
