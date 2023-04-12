@@ -1,7 +1,7 @@
-package br.com.shirtstore.servlet;
+package br.com.restaurante.servlet;
 
-import br.com.shirtstore.dao.ClientDao;
-import br.com.shirtstore.model.Client;
+import br.com.restaurante.dao.ClientDao;
+import br.com.restaurante.model.Client;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
