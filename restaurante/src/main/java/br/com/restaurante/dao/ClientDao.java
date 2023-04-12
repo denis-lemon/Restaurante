@@ -1,6 +1,6 @@
-package br.com.shirtstore.dao;
+package br.com.restaurante.dao;
 
-import br.com.shirtstore.model.Client;
+import br.com.restaurante.model.Client;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
