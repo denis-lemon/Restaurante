@@ -4,7 +4,7 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true">
         <processorPath useClasspath="false">
-          <entry name="$PROJECT_DIR$/../../../Java/versão17" />
+          <entry name="$USER_HOME$/Java/versão17" />
         </processorPath>
       </profile>
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -12,6 +12,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Restaurante" />
+        <module name="restaurante" />
       </profile>
     </annotationProcessing>
   </component>

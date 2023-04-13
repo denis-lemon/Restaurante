@@ -6,11 +6,50 @@
     font-family: 'Poppins', sans-serif;
 
 }
-
 body {
     background-color: #ffffec;
-
 }
+/*  CABEÇALHO  */
+
+.containerHeader {
+    background-color: #6B1108;
+    opacity: 0.9;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.navCadastro {
+    position: absolute;
+    top: 110;
+    right: 75px;
+}
+
+.LoginECadastro {
+    display: inline;
+    font-size: 10pt;
+}
+.navOpcoes li {
+    position: relative;
+    top: 40px;
+    left: 1222px;
+    padding: 10px;
+}
+.fonteCabecalho {
+    display: inline;
+}
+
+.home {
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+
+/* MAIN */
 
 .container {
     display: flex;
@@ -64,7 +103,7 @@ h2 {
     margin-top: 13px;
 }
 
-button {
+.botao {
     background-color: transparent;
     border-color: #6B1108;
     color: #6B1108;
@@ -78,14 +117,7 @@ button {
     transition: all .5s ease-out;
 }
 
-hr {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    color: #6B1108;
-    width: 60%;
-}
-
-button:hover {
+botao:hover {
     background-color: #6B1108;
     color: #fff;
     transition: all .5s ease-out;
@@ -94,8 +126,15 @@ button:hover {
 .justify-center {
     display: flex;
     justify-content: center;
-
 }
+hr {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #6B1108;
+    width: 60%;
+}
+
+
 
 .semConta {
     color: #6B1108;
@@ -126,16 +165,7 @@ button:hover {
     font-size: 10pt;
 }
 
-.containerHeader {
-    background-color: #6B1108;
-    opacity: 0.9;
-    font-weight: bold;
-    color: #ffffff;
-    padding: 10px;
-    position: relative;
-    width: 100%;
-    height: 60px;
-}
+
 
 a {
     text-decoration: none;
@@ -143,42 +173,9 @@ a {
     opacity: 0.9;
 }
 
-.LoginECadastro {
-    display: inline;
-    font-size: 10pt;
-}
-
-.navCadastro {
-    position: absolute;
-    top: 110;
-    right: 75px;
-}
 
 a:hover {
     color: #ffffff;
     transition: all .3s ease-out;
 }
 
-.fonteCabecalho {
-    display: inline;
-}
-
-.navOpcoes li {
-    position: relative;
-    top: 40px;
-    left: 1222px;
-    padding: 10px;
-}
-
-.home {
-    position: relative;
-    top: 20px;
-    left: 10px;
-}
-
-.esqueceuSenha {
-    font-size: 10pt;
-    position: relative;
-    left: 10px;
-    bottom: 10px;
-}
