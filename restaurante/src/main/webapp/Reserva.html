@@ -40,7 +40,7 @@
 
         <div class="mr-100">
             <h3>Realize aqui sua Reserva!</h3>
-            <form>
+            <form action="/reserva" method="post">
                 <label for="data">Selecione a data desejada:</label>
                 <input type="date" id="data">
                 <br>
@@ -64,8 +64,8 @@
                     <option>22:00</option>
                 </select>
                 <br>
-                <label for="pessoas">Selecione a quantidade de Pessoas:</label>
-                <select name="pessoas" id="pessoas">
+                <label for="qntPessoas">Selecione a quantidade de Pessoas:</label>
+                <select name="qntPessoas" id="qntPessoas">
                     <option>1 a 2</option>
                     <option>3 a 4</option>
                     <option>5 a 7</option>
@@ -82,7 +82,7 @@
                 <label for="extra">Deseja adicionar alguma informação ou olicitar algo especial?</label><br>
                 <textarea name="extra" id="extra" cols="60" rows="5"></textarea>
                 <br>
-                <button>Solicitar Reserva</button>
+                <button type="submit">Solicitar Reserva</button>
             </form>
         </div>
         <div>

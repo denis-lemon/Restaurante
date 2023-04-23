@@ -1,3 +1,7 @@
-D:\Coding\ProjetoLoja\shirtStore\src\main\java\br\com\shirtstore\servlet\CreateClientServlet.java
-D:\Coding\ProjetoLoja\shirtStore\src\main\java\br\com\shirtstore\dao\ClientDao.java
-D:\Coding\ProjetoLoja\shirtStore\src\main\java\br\com\shirtstore\model\Client.java
+C:\Workspace\Restaurante\restaurante\src\main\java\br\com\restaurante\dao\ClientDao.java
+C:\Workspace\Restaurante\restaurante\src\main\java\br\com\restaurante\model\Client.java
+C:\Workspace\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\CreateClientServlet.java
+C:\Workspace\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\CreateReservaServlet.java
+C:\Workspace\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\CreateRestaurante.java
+C:\Workspace\Restaurante\restaurante\src\main\java\br\com\restaurante\dao\ReservaDao.java
+C:\Workspace\Restaurante\restaurante\src\main\java\br\com\restaurante\model\Reserva.java

@@ -1,3 +1,7 @@
-br\com\shirtstore\servlet\CreateClientServlet.class
-br\com\shirtstore\model\Client.class
-br\com\shirtstore\dao\ClientDao.class
+br\com\restaurante\dao\ClientDao.class
+br\com\restaurante\servlet\CreateRestaurante.class
+br\com\restaurante\model\Reserva.class
+br\com\restaurante\servlet\CreateReservaServlet.class
+br\com\restaurante\dao\ReservaDao.class
+br\com\restaurante\model\Client.class
+br\com\restaurante\servlet\CreateClientServlet.class
