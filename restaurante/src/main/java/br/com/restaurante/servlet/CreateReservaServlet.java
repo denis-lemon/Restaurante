@@ -9,12 +9,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Connection;
+import java.util.ArrayList;
 
 @WebServlet("/reserva")
 public class CreateReservaServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         String data = request.getParameter("data");
         String hora = request.getParameter("hora");
         String qntPessoas = request.getParameter("qntPessoas");
@@ -33,4 +36,7 @@ public class CreateReservaServlet extends HttpServlet {
 
         request.getRequestDispatcher("Reserva.html").forward(request, response);
     }
+
+
+
 }

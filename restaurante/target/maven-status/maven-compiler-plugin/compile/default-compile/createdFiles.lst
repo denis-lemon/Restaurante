@@ -1,3 +1,4 @@
+br\com\restaurante\servlet\ListReservaServlet.class
 br\com\restaurante\dao\ClientDao.class
 br\com\restaurante\servlet\CreateRestaurante.class
 br\com\restaurante\model\Reserva.class

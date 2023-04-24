@@ -1,6 +1,8 @@
 package br.com.restaurante.model;
 
 public class Reserva {
+
+    private String id;
     private String data;
     private String hora;
     private String qntPessoas;
@@ -46,5 +48,13 @@ public class Reserva {
 
     public void setAmbiente(String ambiente) {
         this.ambiente = ambiente;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
