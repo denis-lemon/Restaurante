@@ -42,7 +42,6 @@ body {
 }
 .fonteCabecalho {
     display: inline;
-
 }
 
 a {
@@ -59,15 +58,59 @@ a {
 
 h1 {
 text-align: center;
-color: #daa520;
+color: #6B1108;
+margin-top: 30px;
+}
+
+.lh-50 {
+line-height: 70px;
+margin-left: 150px;
 }
 
 .mr-100 {
-    margin-right: 250px;
+    margin-right: 150px;
+    margin-top: 50px;
+    border: 2px solid #6B1108;
+
 }
 
-.mb-50 {
-    margin-bottom: 50px;
+h2 {
+color: #daa520;
+}
+
+label {
+line-height: 30px;
+clear: left;
+margin-left: 70px;
+color: #6B1108;
+font-weight: bold;
+font-family: candara;
+}
+
+.center {
+margin-right: 100px;
+
+}
+
+.mr-70 {
+margin-left: 150px;
+}
+#extra{
+margin-left: 70px;
+
+}
+.button {
+line-height: 30px;
+margin-left: 200px;
+margin-bottom: 10px;
+background: #6B1108;
+color: #daa520;
+font-size: 1em;
+font-weight: 700;
+border: 0;
+border-radius: 2em;
+cursor: pointer;
+padding: 10px;
 }
 
 footer {

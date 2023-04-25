@@ -39,13 +39,13 @@
     <div class="container mb-50">
 
         <div class="mr-100">
-            <h3>Realize aqui sua Reserva!</h3>
+            <h2 class="lh-50">Realize aqui sua Reserva!</h2>
             <form action="/reserva" method="post">
                 <label for="data">Selecione a data desejada:</label>
-                <input type="date" id="data">
+                <input class="center" type="date" id="data">
                 <br>
                 <label for="hora">Selecione o horário desejado:</label>
-                <select name="hora" id="hora">
+                <select class="center"  name="hora" id="hora">
                     <option>12:00</option>
                     <option>12:30</option>
                     <option>13:00</option>
@@ -65,7 +65,7 @@
                 </select>
                 <br>
                 <label for="qntPessoas">Selecione a quantidade de Pessoas:</label>
-                <select name="qntPessoas" id="qntPessoas">
+                <select class="center" name="qntPessoas" id="qntPessoas">
                     <option>1 a 2</option>
                     <option>3 a 4</option>
                     <option>5 a 7</option>
@@ -73,19 +73,23 @@
                 </select>
                 <br>
                 <label for="ambiente">Selecione o Ambiente desejado:</label>
-                <select name="ambiente" id="ambiente">
+                <select class="center" name="ambiente" id="ambiente">
                     <option>Externo</option>
                     <option>Interno</option>
                     <option>Bar</option>
                 </select>
                 <br>
-                <label for="extra">Deseja adicionar alguma informação ou olicitar algo especial?</label><br>
-                <textarea name="extra" id="extra" cols="60" rows="5"></textarea>
                 <br>
-                <button type="submit">Solicitar Reserva</button>
+                <label id="l1" for="extra">Deseja solicitar algo especial?</label><br>
+                <textarea class="center" name="extra" id="extra" cols="50" rows="5"></textarea>
+                <br><br>
+                <button class="button" type="submit">Solicitar Reserva</button>
             </form>
         </div>
         <div>
+            <h2 >Não encontrou a data e o horário desejado?</h2>
+                <h2 class="mr-70">Entre na Fila de Espera!</h2><br><br>
+            <button class="button">Entrar na Fila de Espera</button>
         </div>
     </div>
 </main>
