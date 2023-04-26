@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="51604350-ba9a-4bef-a1a4-e0e3227d1788" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/ListaReservas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/ListaReservas.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Reserva.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Reserva.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/reserva.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/reserva.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Cardapio.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Cardapio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +43,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Workspace/Restaurante&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/pedro.waraujo/Documents/gitBash/carsoft"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Workspace\Restaurante\restaurante\src\main\webapp" />
