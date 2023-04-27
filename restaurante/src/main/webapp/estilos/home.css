@@ -1,0 +1,28 @@
+body {
+   background-color: #ffffec;
+}
+
+.contHeader{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin-top: 10%;
+}
+.item {
+   position: absolute;
+   top: 110;
+   font-size: 15px;
+}
+
+.fontCab{
+   display: inline;
+   width: 100%;
+
+}
+
+/* .imagens {
+   margin-top: 25%;
+   display: flex;
+   justify-content: center;
+} */

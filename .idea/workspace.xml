@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51604350-ba9a-4bef-a1a4-e0e3227d1788" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/ListaReservas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/ListaReservas.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Reserva.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Reserva.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/reserva.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/reserva.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Cadastro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Workspace/Restaurante&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/honor/Git/Restaurante/Restaurante&quot;
   }
 }</component>
   <component name="RecentsManager">
