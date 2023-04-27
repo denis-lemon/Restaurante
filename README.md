@@ -1,5 +1,6 @@
 # Restaurante
-
+### Tutorial 
+[Tutorial ](./tutorial.md)
 ### Lista de Funcionalidades
 
 - Tela Login (Cliente e Funcionário)
