@@ -21,7 +21,7 @@ body {
     height: 60px;
 }
 
-.logo{
+.logo {
     width: 15vh;
     margin-top: -67px;
     margin-right: 17px;
@@ -59,7 +59,25 @@ a {
     text-decoration: none;
     color: #daa520;
 }
+
 /*MAIN*/
+.bemVindo {
+    color: #daa520;
+}
+
+.feijuca{
+    width: 35vh;
+    margin-top: 20vh;
+    margin-left: 20vh;
+}
+
+.produto1{
+    position: absolute;
+    background-color: #ffffff;
+    padding-bottom: 70px;
+    border-radius: 5px;
+    width: 10vh;
+}
 
 /*FOOTER*/
 .Rodape {
