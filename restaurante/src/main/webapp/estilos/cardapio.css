@@ -2,30 +2,75 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-
 }
+
 body {
     background-color: #ffffec;
-   
+    overflow-x: hidden;
 }
-header {
+
+/*CABEÇALHO*/
+.containerHeader {
     background-color: #6B1108;
     opacity: 0.9;
     font-weight: bold;
     color: #ffffff;
+    padding: 10px;
+    position: relative;
     width: 100%;
     height: 60px;
 }
-.containerHeader{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 50px;
-}
-.navOpcoes ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
+
+.logo{
+    width: 15vh;
+    margin-top: -67px;
+    margin-right: 17px;
 }
 
+a:hover {
+    color: #ffffff;
+    transition: all .3s ease-out;
+}
+
+.navCadastro {
+    position: absolute;
+    top: 1vh;
+    right: 10vh;
+}
+
+.LoginECadastro {
+    display: inline;
+    font-size: 12pt;
+}
+
+.navOpcoes li {
+    position: relative;
+    top: 2vh;
+    left: 73vh;
+    padding: 30px;
+}
+
+.fonteCabecalho {
+    display: inline;
+    font-size: 15pt;
+}
+
+a {
+    text-decoration: none;
+    color: #daa520;
+}
+/*MAIN*/
+
+/*FOOTER*/
+.Rodape {
+    background-color: #6B1108;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    font-size: 12pt;
+    width: 100%;
+    height: 10px;
+    margin: auto;
+    bottom: 0;
+}
