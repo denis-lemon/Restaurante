@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-@WebServlet("/adicionarPrato")
+@WebServlet("/cardapio")
 public class CreatePratoServlet extends HttpServlet {
 
 
@@ -28,7 +28,8 @@ public class CreatePratoServlet extends HttpServlet {
 
         new PratoDao().createPrato(prato);
 
-        request.getRequestDispatcher("Cardapio.html").forward(request, response);
+
+        response.sendRedirect("/listar-pratos");
 
     }
 

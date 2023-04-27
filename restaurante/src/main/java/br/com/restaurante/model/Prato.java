@@ -2,17 +2,26 @@ package br.com.restaurante.model;
 
 public class Prato {
 
+    private int id;
     private String nome;
     private String tipo;
-    private String Descricao;
+    private String descricao;
 
-    public Prato(String nome, String tipo, String descricao) {
+    public Prato(int id,String nome, String tipo, String descricao) {
+        this.id = id;
         this.nome = nome;
         this.tipo = tipo;
-        Descricao = descricao;
+        this.descricao = descricao;
     }
 
     public Prato() {
+    }
+
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -32,10 +41,10 @@ public class Prato {
     }
 
     public String getDescricao() {
-        return Descricao;
+        return descricao;
     }
 
     public void setDescricao(String descricao) {
-        Descricao = descricao;
+        this.descricao = descricao;
     }
 }

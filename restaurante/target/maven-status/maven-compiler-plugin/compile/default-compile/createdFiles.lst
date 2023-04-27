@@ -13,7 +13,11 @@ br\com\restaurante\model\Client.class
 br\com\restaurante\servlet\CreateClientServlet.class
 <<<<<<< Updated upstream
 br\com\restaurante\dao\PratoDao.class
+<<<<<<< Updated upstream
 =======
 br\com\restaurante\servlet\CreateLoginServlet.class
 br\com\restaurante\dao\LoginDao.class
+>>>>>>> Stashed changes
+=======
+br\com\restaurante\servlet\ListCardapioServlet.class
 >>>>>>> Stashed changes

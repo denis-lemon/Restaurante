@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Cadastro.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/index.html" afterDir="false" />
@@ -34,6 +35,19 @@
       <change beforePath="$PROJECT_DIR$/restaurante/target/tomcat/conf/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/tomcat/conf/web.xml" afterDir="false" />
 >>>>>>> Stashed changes
 >>>>>>> 02ceb1cbce1eda94eaa926fe1f0608ab7bc06025
+=======
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/PratoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/PratoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/model/Prato.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/model/Prato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreatePratoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreatePratoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Cadastro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/CardapioEdit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/CardapioEdit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/listReserva.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/listReserva.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/tomcat/conf/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/tomcat/conf/tomcat-users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/tomcat/conf/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/tomcat/conf/web.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +82,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+<<<<<<< Updated upstream
     &quot;last_opened_file_path&quot;: &quot;C:/Users/honor/Git/Restaurante/Restaurante&quot;
 =======
   <component name="PropertiesComponent"><![CDATA[{
@@ -94,8 +112,11 @@
     "project.structure.side.proportion": "0.2"
 >>>>>>> Stashed changes
 >>>>>>> 02ceb1cbce1eda94eaa926fe1f0608ab7bc06025
+=======
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedro.waraujo/Documents/gitBash/carsoft&quot;
+>>>>>>> Stashed changes
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Workspace\Restaurante\restaurante\src\main\webapp" />
