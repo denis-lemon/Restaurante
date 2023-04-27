@@ -6,9 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="51604350-ba9a-4bef-a1a4-e0e3227d1788" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Cardapio.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Cardapio.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Reserva.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Reserva.html" afterDir="false" />
+>>>>>>> Stashed changes
+=======
+      <change beforePath="$PROJECT_DIR$/restaurante/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreateClientServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreateClientServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreateRestaurante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/classes/br/com/restaurante/servlet/CreateRestaurante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/tomcat/conf/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/tomcat/conf/tomcat-users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/tomcat/conf/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/tomcat/conf/web.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +63,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< Updated upstream
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/pedro.waraujo/Documents/gitBash/carsoft"
+=======
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/ciluc/OneDrive/Documentos/ADS/3 semestre/PI3/Restaurante",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+>>>>>>> Stashed changes
   }
 }]]></component>
   <component name="RecentsManager">
@@ -56,6 +87,38 @@
       <recent name="C:\Workspace\Restaurante\restaurante\src\main\java\br\com\restaurante" />
       <recent name="C:\Workspace\Restaurante\restaurante" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Restaurante [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/restaurante" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Maven.Restaurante [tomcat7:run]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -67,5 +130,21 @@
       <updated>1679767002623</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreateReservaServlet.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ReservaDao.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
