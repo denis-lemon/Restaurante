@@ -15,7 +15,7 @@
     <div>
         <nav class="navCadastro">
             <ul>
-                <li class="LoginECadastro"> Acesse seu <a href="index.html">Login</a></li>
+                <li class="LoginECadastro"> Acesse seu <a href="login.html">Login</a></li>
                 <li class="LoginECadastro"> Ou <a href="Cadastro.html">Cadastre se</a></li>
             </ul>
         </nav>
@@ -23,12 +23,12 @@
             <ul>
                 <li class="fonteCabecalho"><a href="Sobre.html">Sobre</a></li>
                 <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
-                <li class="fonteCabecalho"><a href="Reservas.html">Reservas</a></li>
+                <li class="fonteCabecalho"><a href="Reserva.html">Reservas</a></li>
             </ul>
         </nav>
         <nav class="reserva">
             <ul>
-                <a href="Reserva.html">Reserva</a>
+                <a href="index.html">Home</a>
             </ul>
         </nav>
     </div>
@@ -42,7 +42,7 @@
             <h2 class="lh-50">Realize aqui sua Reserva!</h2>
             <form action="/reserva" method="post">
                 <label for="data">Selecione a data desejada:</label>
-                <input class="center" type="date" id="data" name="data">
+                <input class="center" type="date" id="data">
                 <br>
                 <label for="hora">Selecione o horário desejado:</label>
                 <select class="center"  name="hora" id="hora">
@@ -80,8 +80,8 @@
                 </select>
                 <br>
                 <br>
-                <label id="l1" for="obs">Deseja solicitar algo especial?</label><br>
-                <textarea class="center" name="obs" id="obs" cols="50" rows="5"></textarea>
+                <label id="l1" for="extra">Deseja solicitar algo especial?</label><br>
+                <textarea class="center" name="extra" id="extra" cols="50" rows="5"></textarea>
                 <br><br>
                 <button class="button" type="submit">Solicitar Reserva</button>
             </form>

@@ -9,6 +9,7 @@
     <title>Login</title>
 </head>
 <body>
+
 <header class="containerHeader">
     <div>
     <nav class="navCadastro">
@@ -19,14 +20,14 @@
         </nav>
     <nav class="navOpcoes">
          <ul>
-             <li class="fonteCabecalho"><a  href="Sobre.html">Sobre</a></li>
+            <a  href="Sobre.html"><li class="fonteCabecalho">Sobre</li></a>
              <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
-             <li class="fonteCabecalho"><a  href="Reservas.html">Reservas</a></li>
+             <li class="fonteCabecalho"><a  href="Reserva.html">Reservas</a></li>
          </ul>
         </nav>
         <nav class="home">
         <ul>
-            <a href="Home.html">Home</a>
+            <a href="index.html">Home</a>
         </ul>
             </nav>
     </div>
@@ -35,20 +36,19 @@
     <div class="container">
         <div class="card">
 <h2>Login</h2>
-    <form method="post" action="/login">
+    <form method="get" action="/login" >
         <div class="label-float">
 
             <label for="email">Email:</label><br>
             <input type="email" name="email" id="email">
             <label for="password">Senha:</label>
             <input type="password" name="password" id="password">
-
         </div>
 <div>
     <a class="esqueceuSenha" href="EsqueceuSenha.html">Esqueceu sua senha?</a>
 </div>
         <div class="justify-center">
-            <button id="submit">Entrar</button>
+            <button class="botao" id="submit">Entrar</button>
         </div>
 
         <div class="justify-center">
@@ -66,7 +66,7 @@
 
 <footer class="Rodape">
 
-    <h4>Todos os direitos reservados</h4>
+    <h4>&copyTodos os direitos reservados</h4>
 </footer>
 
 </body>

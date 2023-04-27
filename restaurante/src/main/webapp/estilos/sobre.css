@@ -1,33 +1,3 @@
-<<<<<<< HEAD
-body {
-   background-color: #ffffec;
-}
-
-.contHeader{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   margin-top: 10%;
-}
-.item {
-   position: absolute;
-   top: 110;
-   font-size: 15px;
-}
-
-.fontCab{
-   display: inline;
-   width: 100%;
-
-}
-
-/* .imagens {
-   margin-top: 25%;
-   display: flex;
-   justify-content: center;
-} */
-=======
 @import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300;400;500;600 & family= Poppins:ital,wght@0,100;0,200; 0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap');
 
 * {
@@ -102,6 +72,19 @@ h2 {
     text-align: center;
     padding: 15px;
     color: #6B1108;
+}
+
+.about{
+    margin-left: 40%;
+    text-align: justify;
+}
+
+.tit{
+    margin-left: 4%;
+}
+
+.p{
+    margin-right: 0%;
 }
 
 .label-float input {
@@ -202,4 +185,3 @@ a:hover {
     color: #ffffff;
     transition: all .3s ease-out;
 }
->>>>>>> 02ceb1cbce1eda94eaa926fe1f0608ab7bc06025

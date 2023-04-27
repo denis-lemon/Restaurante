@@ -8,10 +8,6 @@ public class Client {
     private String email;
     private String password;
 
-    public Client() {
-    }
-
-
     public String getLastName() {
         return lastName;
     }

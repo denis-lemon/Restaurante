@@ -1,44 +1,16 @@
-<<<<<<< HEAD
-body {
-   background-color: #ffffec;
-}
-
-.contHeader{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   margin-top: 10%;
-}
-.item {
-   position: absolute;
-   top: 110;
-   font-size: 15px;
-}
-
-.fontCab{
-   display: inline;
-   width: 100%;
-
-}
-
-/* .imagens {
-   margin-top: 25%;
-   display: flex;
-   justify-content: center;
-} */
-=======
 @import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300;400;500;600 & family= Poppins:ital,wght@0,100;0,200; 0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-
+    font-family: 'Poppins', sans-serif; 
 }
+
 body {
     background-color: #ffffec;
+    overflow: hidden;
 }
+
 /*  CABEÇALHO  */
 
 .containerHeader {
@@ -62,21 +34,25 @@ body {
     display: inline;
     font-size: 10pt;
 }
+
 .navOpcoes li {
     position: relative;
     top: 40px;
     left: 1222px;
     padding: 10px;
 }
+
 .fonteCabecalho {
     display: inline;
 }
+
 
 .home {
     position: relative;
     top: 20px;
     left: 10px;
 }
+
 
 /* MAIN */
 
@@ -156,12 +132,15 @@ botao:hover {
     display: flex;
     justify-content: center;
 }
+
 hr {
     margin-top: 5%;
     margin-bottom: 5%;
     color: #6B1108;
     width: 60%;
 }
+
+
 
 .semConta {
     color: #6B1108;
@@ -187,10 +166,16 @@ hr {
     padding: 10px;
     text-align: center;
     color: #ffffff;
-    position: relative;
-    top: 28px;
+    position: absolute;
     font-size: 10pt;
+    width: 100%;
+    height: 10px;
+    margin: auto;
+    bottom: 0;
+
 }
+
+
 
 a {
     text-decoration: none;
@@ -198,8 +183,8 @@ a {
     opacity: 0.9;
 }
 
+
 a:hover {
     color: #ffffff;
     transition: all .3s ease-out;
 }
->>>>>>> 02ceb1cbce1eda94eaa926fe1f0608ab7bc06025
