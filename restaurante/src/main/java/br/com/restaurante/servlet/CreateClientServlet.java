@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/create-client")
+@WebServlet(urlPatterns = {"/create-client"})
 public class CreateClientServlet extends HttpServlet {
 
     @Override
