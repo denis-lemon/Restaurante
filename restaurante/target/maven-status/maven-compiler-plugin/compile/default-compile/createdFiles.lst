@@ -1,23 +1,13 @@
-br\com\restaurante\servlet\ListReservaServlet.class
 br\com\restaurante\dao\ClientDao.class
-<<<<<<< Updated upstream
-br\com\restaurante\servlet\CreateRestaurante.class
 br\com\restaurante\model\Prato.class
-=======
->>>>>>> Stashed changes
 br\com\restaurante\model\Reserva.class
 br\com\restaurante\servlet\CreatePratoServlet.class
 br\com\restaurante\servlet\CreateReservaServlet.class
 br\com\restaurante\dao\ReservaDao.class
 br\com\restaurante\model\Client.class
-br\com\restaurante\servlet\CreateClientServlet.class
-<<<<<<< Updated upstream
-br\com\restaurante\dao\PratoDao.class
-<<<<<<< Updated upstream
-=======
 br\com\restaurante\servlet\CreateLoginServlet.class
-br\com\restaurante\dao\LoginDao.class
->>>>>>> Stashed changes
-=======
 br\com\restaurante\servlet\ListCardapioServlet.class
->>>>>>> Stashed changes
+br\com\restaurante\servlet\ListReservaServlet.class
+br\com\restaurante\servlet\CreateClientServlet.class
+br\com\restaurante\dao\PratoDao.class
+br\com\restaurante\dao\LoginDao.class

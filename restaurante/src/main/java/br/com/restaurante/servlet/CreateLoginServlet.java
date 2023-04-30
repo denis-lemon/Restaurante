@@ -9,20 +9,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.sql.ResultSet;
 
 @WebServlet("/login")
 public class CreateLoginServlet extends HttpServlet {
-private static  final long serialVersionUID =1L;
-@Override
-protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-
-        RequestDispatcher rd = request.getRequestDispatcher("login.html");
-        rd.forward(request, response);
-    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -30,16 +20,21 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response)
     try{
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+
         Client cliente = new Client();
+        cliente.setEmail(email);
+        cliente.setPassword(password);
 
         LoginDao clienteDao = new LoginDao();
-        ResultSet rsClienteDao = clienteDao.validarLogin(cliente);
 
-        if(rsClienteDao.next()){
-           RequestDispatcher rd = request.getRequestDispatcher("Reserva.html");
-           rd.forward(request, response);
+
+        if(clienteDao.validarLogin(email, password)){
+           response.sendRedirect(".html");
+
         }else{
-            System.out.println("Usuário e/ou senha incorretos.");
+            request.setAttribute("Error", "Usuário e/ou senha inválidos.");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("login.html");
+            dispatcher.forward(request,response);
         }
     }catch (Exception e){
         System.out.println(e + "erro");
