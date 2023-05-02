@@ -14,13 +14,13 @@
     <div>
         <nav class="navCadastro">
             <ul>
-                <li class="LoginECadastro"> Acesse seu <a href="login.html">Login</a></li>
+                <li class="LoginECadastro"> Acesse seu <a href="login.jsp">Login</a></li>
                 <li class="LoginECadastro"> ou <a href="Cadastro.html">Cadastre se</a></li>
             </ul>
         </nav>
         <nav class="navOpcoes">
             <ul>
-                <li class="fonteCabecalho"><a href="home.html">Home</a></li>
+                <li class="fonteCabecalho"><a href="index.html">Home</a></li>
                 <li class="fonteCabecalho"><a href="Sobre.html">Sobre</a></li>
                 <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
                 <li class="fonteCabecalho"><a href="Reserva.html">Reservas</a></li>
@@ -28,7 +28,7 @@
         </nav>
         <nav class="reserva">
             <ul>
-                <a href="home.html"><img class="logo" src="img/logo.png" alt="" srcset=""></a>
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="" srcset=""></a>
             </ul>
         </nav>
     </div>
