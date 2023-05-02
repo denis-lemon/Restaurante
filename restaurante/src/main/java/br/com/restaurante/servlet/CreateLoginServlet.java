@@ -29,11 +29,11 @@ public class CreateLoginServlet extends HttpServlet {
 
 
         if(clienteDao.validarLogin(email, password)){
-           response.sendRedirect(".html");
+           response.sendRedirect("Reserva.html");
 
         }else{
             request.setAttribute("Error", "Usuário e/ou senha inválidos.");
-            RequestDispatcher dispatcher = request.getRequestDispatcher("login.html");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
             dispatcher.forward(request,response);
         }
     }catch (Exception e){
