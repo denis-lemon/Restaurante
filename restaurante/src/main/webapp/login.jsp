@@ -37,7 +37,7 @@
     <div class="container">
         <div class="card">
             <h2>Login</h2>
-            <form method="get" action="/login" >
+            <form method="post" action="/login" >
                 <div class="label-float">
 
                     <label for="email">Email:</label><br>
@@ -51,7 +51,6 @@
                 <div class="justify-center">
                     <button class="botao" id="submit">Entrar</button>
                 </div>
-
                 <div class="justify-center">
                     <hr>
                 </div>
