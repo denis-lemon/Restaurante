@@ -9,14 +9,13 @@
 
 body {
     background-color: #ffffec;
-    overflow-x: hidden;  
-    background-image: url("https://www.melhoresdestinos.com.br/wp-content/uploads/2020/12/comidas-tipicas-capa2019-01.jpg");
+    overflow-x: hidden;
+    background-image: url(/Restaurante/restaurante/src/main/webapp/img/fundo.jpg);
 }
 
 /*HEADER*/
 .containerHeader {
     background-color: #6B1108;
-    opacity: 0.9;
     font-weight: bold;
     color: #ffffff;
     padding: 10px;
@@ -25,7 +24,7 @@ body {
     height: 60px;
 }
 
-.logo{
+.logo {
     width: 15vh;
     margin-top: -67px;
     margin-right: 17px;
@@ -66,10 +65,29 @@ a {
 
 /*MAIN*/
 
-.bemVindo {
-    color: #ffff;
+.BemVindo {
+    color: rgb(223, 219, 219);
+    font-size: bold;
+    font-size: 25px;
+    padding: 5px;
 }
 
+.texto{
+    background-color: #6B1108;
+    height: 80vh;
+    width: 50%;
+    margin: 40px auto 40px auto;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.loren{
+    font-size: 20px;
+    color: rgb(223, 219, 219);
+    margin-top: 105px;
+    text-align: justify;
+    padding: 15px;
+}
 
 /*RODAPÉ*/
 .Rodape {
@@ -83,5 +101,4 @@ a {
     height: 10px;
     margin: auto;
     bottom: 0;
-
 }

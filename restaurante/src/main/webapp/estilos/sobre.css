@@ -170,9 +170,12 @@ hr {
     padding: 10px;
     text-align: center;
     color: #ffffff;
-    position: relative;
-    top: 28px;
+    position: absolute;
     font-size: 10pt;
+    width: 100%;
+    height: 10px;
+    margin: auto;
+    bottom: 0;
 }
 
 a {
