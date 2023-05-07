@@ -21,12 +21,11 @@ Essa página ainda não está clicável no site, o acesso dela é no url
 (localhost:8080/CardapioEdit.jsp)
 
 Para a criação de tabela no h2, segue o script:
-CREATE TABLE CARDAPIO(
-ID BIGINT AUTO_INCREMENT PRIMARY KEY, 
-NOME VARCHAR, 
-TIPO VARCHAR, 
-DESCRICAO VARCHAR
-)
+CREATE TABLE CARDAPIO( ID BIGINT AUTO_INCREMENT PRIMARY KEY,
+NOME VARCHAR,
+TIPO VARCHAR,
+DESCRICAO VARCHAR,
+PRECO VARCHAR )
 
 ### Página Reserva (Visualização de Usuário)
 Nela será possível o usuário realizar sua reserva, tendo a opção de selecionar
