@@ -14,3 +14,4 @@ br\com\restaurante\model\Employee.class
 br\com\restaurante\servlet\CreateClientServlet.class
 br\com\restaurante\dao\PratoDao.class
 br\com\restaurante\dao\LoginDao.class
+br\com\restaurante\servlet\DeletePratoServlet.class

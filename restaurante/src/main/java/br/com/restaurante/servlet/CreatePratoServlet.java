@@ -20,11 +20,13 @@ public class CreatePratoServlet extends HttpServlet {
         String nome = request.getParameter("nome");
         String tipo = request.getParameter("tipo");
         String descricao = request.getParameter("descricao");
+        String preco = request.getParameter("preco");
 
         Prato prato = new Prato();
         prato.setNome(nome);
         prato.setTipo(tipo);
         prato.setDescricao(descricao);
+        prato.setPreco(preco);
 
         new PratoDao().createPrato(prato);
 

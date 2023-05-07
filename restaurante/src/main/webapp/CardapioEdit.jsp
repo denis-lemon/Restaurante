@@ -19,7 +19,7 @@
 
         <label for="nome">Nome do prato: </label>
        <input type="text" name="nome" id="nome">
-       <label for="nome">Tipo:</label>
+       <label for="tipo">Tipo:</label>
        <select name="tipo" id="tipo">
         <option> ENTRADA </option>
         <option> PRATO PRINCIPAL </option>
@@ -30,8 +30,10 @@
        </select>
        <label for="descricao">Descrição</label>
        <input type="text" name="descricao" id="descricao">
+        <label for="preco">Preço : </label>
+        <input type="text" name="preco" id="preco">
 
-         <button id="submit">Enviar</button>
+        <button id="submit">Enviar</button>
 
     </form>
     <br>
@@ -43,6 +45,7 @@
                 <th>Nome</th>
                 <th>Tipo</th>
                 <th>Descrição</th>
+                <th>Preço</th>
             </tr>
             <c:forEach var="prato" items="${pratos}">
                 <tr>
@@ -50,9 +53,20 @@
                     <td>${prato.nome}</td>
                     <td>${prato.tipo}</td>
                     <td>${prato.descricao}</td>
+                    <td>R$  ${prato.preco}</td>
+                    <td>
+                        <form action="/delete-prato" method="post">
+                        <input type="hidden" id="id" name="id" value="${prato.id}">
+                        <button type="submit">Deletar</button>
+                        </form>
+                    </td>
                 </tr>
             </c:forEach>
         </table>
     </div>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 4fd0e5c72db7dde5d912b0d28c1bd001c52516cd
