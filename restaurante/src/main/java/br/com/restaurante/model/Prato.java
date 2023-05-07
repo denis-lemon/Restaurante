@@ -6,12 +6,14 @@ public class Prato {
     private String nome;
     private String tipo;
     private String descricao;
+    private String preco;
 
-    public Prato(int id,String nome, String tipo, String descricao) {
+    public Prato(int id,String nome, String tipo, String descricao, String preco) {
         this.id = id;
         this.nome = nome;
         this.tipo = tipo;
         this.descricao = descricao;
+        this.preco = preco;
     }
 
     public Prato() {
@@ -46,5 +48,13 @@ public class Prato {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public String getPreco() {
+        return preco;
+    }
+
+    public void setPreco(String preco) {
+        this.preco = preco;
     }
 }
