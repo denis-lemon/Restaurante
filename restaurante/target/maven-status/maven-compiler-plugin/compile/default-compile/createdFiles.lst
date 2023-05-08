@@ -2,12 +2,15 @@ br\com\restaurante\dao\ClientDao.class
 br\com\restaurante\model\Prato.class
 br\com\restaurante\model\Reserva.class
 br\com\restaurante\servlet\CreatePratoServlet.class
+br\com\restaurante\servlet\CreateEmployeeServlet.class
 br\com\restaurante\servlet\CreateReservaServlet.class
+br\com\restaurante\dao\EmployeeDao.class
 br\com\restaurante\dao\ReservaDao.class
 br\com\restaurante\model\Client.class
 br\com\restaurante\servlet\CreateLoginServlet.class
 br\com\restaurante\servlet\ListCardapioServlet.class
 br\com\restaurante\servlet\ListReservaServlet.class
+br\com\restaurante\model\Employee.class
 br\com\restaurante\servlet\CreateClientServlet.class
 br\com\restaurante\dao\PratoDao.class
 br\com\restaurante\dao\LoginDao.class

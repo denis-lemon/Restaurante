@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="estilos/login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="estilos/cadastro.css">
+    <title>Cadastro de Funcionários</title>
 </head>
+
 <body>
 
 <header class="containerHeader">
@@ -36,28 +38,30 @@
 <main>
     <div class="container">
         <div class="card">
-            <h2>Login</h2>
-            <form method="post" action="/login" >
+            <h2>Cadastro de Funcionários</h2>
+            <form action="/create-employee" method="post" >
                 <div class="label-float">
-
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name">
+                    <label for="lastName">Sobrenome:</label>
+                    <input type="text" name="lastName" id="lastName">
+                    <label for="name">Cpf:</label>
+                    <input type="text" name="cpf" id="cpf">
                     <label for="email">Email:</label><br>
                     <input type="email" name="email" id="email">
                     <label for="password">Senha:</label>
                     <input type="password" name="password" id="password">
                 </div>
-                <div>
-                    <a class="esqueceuSenha" href="EsqueceuSenha.html">Esqueceu sua senha?</a>
-                </div>
                 <div class="justify-center">
-                    <button class="botao" id="submit">Entrar</button>
+                    <button class="botao" type="submit">Cadastrar</button>
                 </div>
+
+
                 <div class="justify-center">
                     <hr>
                 </div>
 
-                <p class="semConta">Não tem uma conta?
 
-                    <a class="cadastreSe" href="Cadastro.html">Cadastre se</a></p>
             </form>
         </div>
     </div>
@@ -65,9 +69,9 @@
 </main>
 
 <footer class="Rodape">
-
     <h4>&copyTodos os direitos reservados</h4>
 </footer>
 
 </body>
+
 </html>
