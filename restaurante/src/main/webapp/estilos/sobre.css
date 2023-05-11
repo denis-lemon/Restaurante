@@ -8,12 +8,13 @@
 }
 body {
     background-color: #ffffec;
+    background-image: url(/Restaurante/restaurante/src/main/webapp/img/fundo.jpg);
+    overflow-x: hidden;
 }
 /*  CABEÇALHO  */
 
 .containerHeader {
     background-color: #6B1108;
-    opacity: 0.9;
     font-weight: bold;
     color: #ffffff;
     padding: 10px;
@@ -22,31 +23,45 @@ body {
     height: 60px;
 }
 
+.logo {
+    width: 15vh;
+    margin-top: -67px;
+    margin-right: 17px;
+}
+
+a:hover {
+    color: #ffffff;
+    transition: all .3s ease-out;
+}
+
 .navCadastro {
     position: absolute;
-    top: 110;
-    right: 75px;
+    top: 1vh;
+    right: 10vh;
 }
 
 .LoginECadastro {
     display: inline;
-    font-size: 10pt;
-}
-.navOpcoes li {
-    position: relative;
-    top: 40px;
-    left: 1222px;
-    padding: 10px;
-}
-.fonteCabecalho {
-    display: inline;
+    font-size: 12pt;
 }
 
-.home {
+.navOpcoes li {
     position: relative;
-    top: 20px;
-    left: 10px;
+    top: 2vh;
+    left: 73vh;
+    padding: 30px;
 }
+
+.fonteCabecalho {
+    display: inline;
+    font-size: 15pt;
+}
+
+a {
+    text-decoration: none;
+    color: #daa520;
+}
+
 
 /* MAIN */
 
@@ -56,6 +71,16 @@ body {
     align-items: center;
     width: 100%;
     margin-top: 10%;
+}
+
+.texto{
+    background-color: #6B1108;
+    height: 80vh;
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0px 15px;
 }
 
 .card {
@@ -75,16 +100,22 @@ h2 {
 }
 
 .about{
-    margin-left: 40%;
     text-align: justify;
 }
 
-.tit{
-    margin-left: 4%;
+.BemVindo {
+    color: #daa520;
+    font-size: bold;
+    font-size: 25px;
+    padding: 5px;
+    margin: auto;
 }
 
-.p{
-    margin-right: 0%;
+.loren{
+    font-size: 20px;
+    color: rgb(223, 219, 219);
+    text-align: justify;
+    margin-top: 30px;
 }
 
 .label-float input {
@@ -165,6 +196,17 @@ hr {
     transition: all .3s ease-out;
 }
 
+a {
+    text-decoration: none;
+    color: #daa520;
+}
+
+a:hover {
+    color: #ffffff;
+    transition: all .3s ease-out;
+}
+
+/*RODAPÉ*/
 .Rodape {
     background-color: #6B1108;
     padding: 10px;
@@ -176,15 +218,4 @@ hr {
     height: 10px;
     margin: auto;
     bottom: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #daa520;
-    opacity: 0.9;
-}
-
-a:hover {
-    color: #ffffff;
-    transition: all .3s ease-out;
 }

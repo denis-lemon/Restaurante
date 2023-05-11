@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-
 }
 
 body {
@@ -66,7 +65,7 @@ a {
 /*MAIN*/
 
 .BemVindo {
-    color: rgb(223, 219, 219);
+    color: #daa520;
     font-size: bold;
     font-size: 25px;
     padding: 5px;
@@ -76,17 +75,17 @@ a {
     background-color: #6B1108;
     height: 80vh;
     width: 50%;
-    margin: 40px auto 40px auto;
+    margin: 40px auto;
     text-align: center;
     border-radius: 5px;
+    padding: 0px 15px;
 }
 
 .loren{
     font-size: 20px;
     color: rgb(223, 219, 219);
-    margin-top: 105px;
+    margin-top: 30px;
     text-align: justify;
-    padding: 15px;
 }
 
 /*RODAPÉ*/
