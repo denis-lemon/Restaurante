@@ -1,11 +1,10 @@
 
+
 div.container{
     text-align: center;
 }
-
-
 h1 {
-	color: #daa520;
+    color: #daa520;
 	text-align: center;
 }
 .tabela, th, tr, td {
@@ -26,6 +25,9 @@ h1 {
 #tabela td {
 	border: 1px solid #ddd;
 	padding: 10px;
+}
+td button{
+    background-color: ;
 }
 
 
