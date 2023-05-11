@@ -1,3 +1,6 @@
+<%@page language="java" contentType="text/html; charset-UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -38,6 +41,8 @@
         <div class="card">
             <h2>Login</h2>
             <form method="post" action="/login" >
+
+            <span>${requestScope.Error}</span>
                 <div class="label-float">
 
                     <label for="email">Email:</label><br>

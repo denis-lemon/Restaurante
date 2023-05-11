@@ -3,7 +3,6 @@ package br.com.restaurante.servlet;
 import br.com.restaurante.dao.LoginDao;
 import br.com.restaurante.model.Client;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,6 +12,13 @@ import java.io.IOException;
 
 @WebServlet("/login")
 public class CreateLoginServlet extends HttpServlet {
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        req.getRequestDispatcher("login.jsp").forward(req, resp);
+
+    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -25,16 +31,17 @@ public class CreateLoginServlet extends HttpServlet {
         cliente.setEmail(email);
         cliente.setPassword(password);
 
-        LoginDao clienteDao = new LoginDao();
+        boolean valido = new LoginDao().validarLogin(cliente);
 
 
-        if(clienteDao.validarLogin(email, password)){
-           response.sendRedirect("Reserva.html");
+        if(valido){
+            request.getSession().setAttribute("email", email);
+             response.sendRedirect("Home2.html");
 
         }else{
             request.setAttribute("Error", "Usuário e/ou senha inválidos.");
-            RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
-            dispatcher.forward(request,response);
+
+            request.getRequestDispatcher("login.jsp").forward(request,response);
         }
     }catch (Exception e){
         System.out.println(e + "erro");

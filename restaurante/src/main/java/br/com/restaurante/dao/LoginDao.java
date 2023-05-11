@@ -11,28 +11,36 @@ import java.util.logging.Logger;
 
 public class LoginDao {
 
-    public boolean validarLogin(String email, String password){
-    String SQL = "SELECT * FROM CLIENTE WHERE email =? AND PASSWORD=?";
+    public boolean validarLogin(Client client){
+    String SQL = "SELECT * FROM CLIENTE WHERE email =?";
 
-    boolean valido = false;
         try{
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test","sa","sa");
             System.out.println("sucess in connection");
 
             PreparedStatement ps = connection.prepareStatement(SQL);
-            ps.setString(1, email);
-            ps.setString(2,password);
 
+
+            ps.setString(1, client.getEmail());
             ResultSet rs = ps.executeQuery();
 
-            if(rs.next()) {
-                valido = true;
+
+
+            while(rs.next()) {
+
+                String password = rs.getString("password");
+                if(password.equals(client.getPassword())){
+                    return true;
+                }
             }
+            connection.close();
+
+            return false;
 
         }catch (SQLException e){
             e.printStackTrace();
         }
-        return valido;
+        return false;
     }
 
 }
