@@ -4,7 +4,6 @@
 <%@page import="java.util.ArrayList"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
-
     ArrayList<Prato> lista = (ArrayList<Prato>) request.getAttribute("pratos");
 %>
 <!DOCTYPE html>
@@ -65,8 +64,5 @@
         </table>
     </div>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 4fd0e5c72db7dde5d912b0d28c1bd001c52516cd
+
