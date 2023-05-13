@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="estilos/listCardapio.css">
 </head>
 <body>
-    <form method="post" action="/cardapio" >
+    <form method="post" action="/cardapio" enctype="multipart/form-data">
 
         <label for="nome">Nome do prato: </label>
        <input type="text" name="nome" id="nome">
@@ -28,15 +28,16 @@
         <option> SOBREMESA </option>
        </select>
        <label for="descricao">Descrição</label>
-       <input type="text" name="descricao" id="descricao">
+       <input type="text" name="descricao" id="descricao"> <br>
         <label for="preco">Preço : </label>
-        <input type="text" name="preco" id="preco">
+        <input type="text" name="preco" id="preco"> <br>
+        <input type="file" name="file" id="file">
 
-        <button id="submit">Enviar</button>
+        <button id="submit">Save</button>
 
     </form>
     <br>
-    <div class="container">
+    <div class="container" >
     <h1> Cardapio </h1>
         <table class="tabela">
             <tr>
@@ -45,6 +46,8 @@
                 <th>Tipo</th>
                 <th>Descrição</th>
                 <th>Preço</th>
+                <th>Imagem</th>
+                <th>Ações</th>
             </tr>
             <c:forEach var="prato" items="${pratos}">
                 <tr>
@@ -53,10 +56,17 @@
                     <td>${prato.tipo}</td>
                     <td>${prato.descricao}</td>
                     <td>R$  ${prato.preco}</td>
+                     <td>
+                        <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${prato.image}">
+                            <img style="width: 75px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${prato.image}" alt="...">
+                        </a>
+                    </td>
                     <td>
                         <form action="/delete-prato" method="post">
                         <input type="hidden" id="id" name="id" value="${prato.id}">
                         <button type="submit">Deletar</button>
+                        <span> | </span>
+                        <a href="CardapioEdit.jsp?id=${prato.id}&nome=${prato.nome}">Update</a>
                         </form>
                     </td>
                 </tr>

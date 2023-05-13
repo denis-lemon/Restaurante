@@ -8,6 +8,16 @@ public class Prato {
     private String descricao;
     private String preco;
 
+    private String image;
+
+    public Prato(int id,String nome, String tipo, String descricao, String preco, String image) {
+        this.id = id;
+        this.nome = nome;
+        this.tipo = tipo;
+        this.descricao = descricao;
+        this.preco = preco;
+        this.image = image;
+    }
     public Prato(int id,String nome, String tipo, String descricao, String preco) {
         this.id = id;
         this.nome = nome;
@@ -56,5 +66,13 @@ public class Prato {
 
     public void setPreco(String preco) {
         this.preco = preco;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

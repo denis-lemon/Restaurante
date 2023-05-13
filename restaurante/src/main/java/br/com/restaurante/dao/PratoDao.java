@@ -13,7 +13,7 @@ import java.util.List;
 public class PratoDao {
 
     public void createPrato(Prato prato){
-        String SQL = "INSERT INTO CARDAPIO (NOME, TIPO, DESCRICAO, PRECO) VALUES (?, ?, ?, ?)";
+        String SQL = "INSERT INTO CARDAPIO (NOME, TIPO, DESCRICAO, PRECO, IMAGE) VALUES (?, ?, ?, ?, ?)";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
@@ -25,11 +25,14 @@ public class PratoDao {
             preparedStatement.setString(2, prato.getTipo());
             preparedStatement.setString(3, prato.getDescricao());
             preparedStatement.setString(4, prato.getPreco());
+            preparedStatement.setString(5, prato.getImage());
 
             preparedStatement.execute();
+            System.out.println("success in connection");
+
             connection.close();
 
-            System.out.println("success in connection");
+
         } catch (Exception e){
 
             System.out.println("fail in connection"+ e.getMessage());
@@ -60,8 +63,9 @@ public class PratoDao {
                 String tipo = resultSet.getString("tipo");
                 String descricao = resultSet.getString("descricao");
                 String preco = resultSet.getString("preco");
+                String image = resultSet.getString("image");
 
-                Prato prato = new Prato(pratoId, Nome, tipo, descricao,preco);
+                Prato prato = new Prato(pratoId, Nome, tipo, descricao,preco, image);
 
                 pratos.add(prato);
 
@@ -105,6 +109,35 @@ public class PratoDao {
 
 
     }
+
+    public void updatePrato(Prato prato){
+
+        String SQL = "UPDATE CARDAPIO SET NOME = ? WHERE ID = ?";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, prato.getNome());
+            preparedStatement.setInt(2, prato.getId());
+            preparedStatement.execute();
+
+            System.out.println("success in update prato");
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
+
+        }
+    }
+
 
 
 
