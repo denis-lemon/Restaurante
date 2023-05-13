@@ -23,7 +23,7 @@
         </nav>
         <nav class="navOpcoes">
             <ul>
-                <li class="fonteCabecalho"><a href="index.html">Home</a></li>
+                <li class="fonteCabecalho"><a href="home.html">Home</a></li>
                 <li class="fonteCabecalho"><a href="Sobre.html">Sobre</a></li>
                 <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
                 <li class="fonteCabecalho"><a href="Reserva.html">Reservas</a></li>
@@ -31,7 +31,7 @@
         </nav>
         <nav class="reserva">
             <ul>
-                <a href="index.html"><img class="logo" src="img/logo.png" alt="" srcset=""></a>
+                <a href="home.html"><img class="logo" src="img/logo.png" alt="" srcset=""></a>
             </ul>
         </nav>
     </div>

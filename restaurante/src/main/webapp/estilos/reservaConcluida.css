@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300;400;500;600 & family= Poppins:ital,wght@0,100;0,200; 0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@ body {
     overflow-x: hidden;
 }
 
-/*CABEÇALHO*/
+/*HEADER*/
 .containerHeader {
     background-color: #6B1108;
     font-weight: bold;
@@ -60,32 +62,15 @@ a {
 }
 
 /*MAIN*/
-.bemVindo {
-    color: #daa520;
-}
 
-.feijuca{
-    width: 35vh;
-    margin-top: 20vh;
-    margin-left: 20vh;
-}
-
-.produto1{
-    position: absolute;
-    background-color: #ffffff;
-    padding-bottom: 70px;
-    border-radius: 5px;
-    width: 10vh;
-}
-
-/*FOOTER*/
+/*RODAPÉ*/
 .Rodape {
     background-color: #6B1108;
     padding: 10px;
     text-align: center;
     color: #ffffff;
     position: absolute;
-    font-size: 12pt;
+    font-size: 10pt;
     width: 100%;
     height: 10px;
     margin: auto;

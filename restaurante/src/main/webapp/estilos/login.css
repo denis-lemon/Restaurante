@@ -16,7 +16,6 @@ body {
 
 .containerHeader {
     background-color: #6B1108;
-    opacity: 0.9;
     font-weight: bold;
     color: #ffffff;
     padding: 10px;
@@ -25,12 +24,12 @@ body {
     height: 60px;
 }
 
-
 .logo{
     width: 15vh;
     margin-top: -67px;
     margin-right: 17px;
 }
+
 
 a:hover {
     color: #ffffff;
