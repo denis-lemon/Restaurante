@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 
 public class EmployeeDao {
     public void createEmployee(Employee employee){
-        String SQL = "INSERT INTO EMPLOYEE (NAME, LASTNAME, CPF, EMAIL, PASSWORD) VALUES (?, ?, ?, ?, ?)";
+        String SQL = "INSERT INTO EMPLOYEE (NAME, LASTNAME, CPF, EMAIL, PASSWORD) VALUES (?, ?, ?, ?,?)";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
@@ -22,6 +22,7 @@ public class EmployeeDao {
             preparedStatement.setString(4, employee.getEmail());
             preparedStatement.setString(5,employee.getPassword());
 
+
             preparedStatement.execute();
             connection.close();
 
@@ -31,5 +32,10 @@ public class EmployeeDao {
             System.out.println("fail in connection"+ e.getMessage());
             e.printStackTrace();
         }
+
     }
-}
+
+    }
+
+
+

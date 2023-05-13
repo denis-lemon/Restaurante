@@ -2,6 +2,7 @@ package br.com.restaurante.servlet;
 
 import br.com.restaurante.dao.LoginDao;
 import br.com.restaurante.model.Client;
+import br.com.restaurante.model.Employee;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,18 +28,28 @@ public class CreateLoginServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
+
         Client cliente = new Client();
         cliente.setEmail(email);
         cliente.setPassword(password);
 
+        Employee employee = new Employee();
+        employee.setEmail(email);
+        employee.setPassword(password);
+
         boolean valido = new LoginDao().validarLogin(cliente);
+        boolean validoF = new LoginDao().validarLoginF(employee);
 
 
         if(valido){
             request.getSession().setAttribute("email", email);
-             response.sendRedirect("Home2.html");
+             response.sendRedirect("Home2.jsp");
 
-        }else{
+        } else if (validoF) {
+            request.getSession().setAttribute("email", email);
+            response.sendRedirect("CadastroFuncionario.html");
+
+        } else{
             request.setAttribute("Error", "Usuário e/ou senha inválidos.");
 
             request.getRequestDispatcher("login.jsp").forward(request,response);
