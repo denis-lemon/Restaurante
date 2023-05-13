@@ -25,7 +25,8 @@ CREATE TABLE CARDAPIO( ID BIGINT AUTO_INCREMENT PRIMARY KEY,
 NOME VARCHAR,
 TIPO VARCHAR,
 DESCRICAO VARCHAR,
-PRECO VARCHAR )
+PRECO VARCHAR,
+IMAGE VARCHAR(255))
 
 ### Página Reserva (Visualização de Usuário)
 Nela será possível o usuário realizar sua reserva, tendo a opção de selecionar
