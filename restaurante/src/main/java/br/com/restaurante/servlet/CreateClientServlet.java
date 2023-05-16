@@ -31,6 +31,6 @@ public class CreateClientServlet extends HttpServlet {
         new ClientDao().createClient(client);
 
 
-        request.getRequestDispatcher("Cadastro.html").forward(request, response);
+        request.getRequestDispatcher("login.jsp").forward(request, response);
     }
 }
