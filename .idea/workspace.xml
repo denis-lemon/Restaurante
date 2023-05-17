@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="51604350-ba9a-4bef-a1a4-e0e3227d1788" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreateReservaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreateReservaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/CardapioEdit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/CardapioEdit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/listCardapio.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/listCardapio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ClientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ClientDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/ListClientesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/ListClientesServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,21 +37,21 @@
     </option>
   </component>
   <component name="ProjectId" id="2NW5SjoUwpb2Ah1bgQt9ouFMdE3" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/pedro.waraujo/Documents/gitBash/carsoft"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedro.waraujo/Documents/gitBash/carsoft&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Workspace\Restaurante\restaurante\src\main\webapp" />

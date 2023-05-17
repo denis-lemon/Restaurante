@@ -1,6 +1,7 @@
 package br.com.restaurante.dao;
 
 import br.com.restaurante.model.Client;
+import br.com.restaurante.model.Reserva;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -37,7 +38,7 @@ public class ClientDao {
 
         ArrayList<Client> clients = new ArrayList<>();
 
-        String SQL= "SELECT ID, NAME, LASTNAME, CPF, EMAIL FROM CLIENTE WHERE ID = ? , NAME = ?, LASTNAME = ?, CPF = ?, EMAIL = ?";
+        String SQL= "SELECT ID, NAME, LASTNAME, CPF, EMAIL FROM CLIENTE";
 
         try{
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -51,6 +52,16 @@ public class ClientDao {
                 String lastName = rs.getString(3);
                 String cpf = rs.getString(4);
                 String email = rs.getString(5);
+
+                Client c = new Client();
+                clients.add(c);
+
+                c.setId(id);
+                c.setName(name);
+                c.setLastName(lastName);
+                c.setCpf(cpf);
+                c.setEmail(email);
+
 
             }
             System.out.println("sucess in Select * clientes");
