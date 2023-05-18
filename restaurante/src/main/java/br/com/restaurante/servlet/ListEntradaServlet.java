@@ -1,6 +1,5 @@
 package br.com.restaurante.servlet;
 
-
 import br.com.restaurante.dao.PratoDao;
 import br.com.restaurante.model.Prato;
 
@@ -12,23 +11,17 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-
-@WebServlet("/listar-pratos")
-public class ListCardapioServlet extends HttpServlet {
-
+@WebServlet("/listar-entradas")
+public class ListEntradaServlet extends HttpServlet{
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Prato> pratos = new PratoDao().findAllPratos();
+
+        List<Prato> pratos = new PratoDao().findAllEntradas();
 
         req.setAttribute("pratos", pratos);
 
-
-        req.getRequestDispatcher("CardapioEdit.jsp").forward(req, resp);
+        req.getRequestDispatcher("Entrada.jsp").forward(req, resp);
 
     }
-
-
-
-
 }

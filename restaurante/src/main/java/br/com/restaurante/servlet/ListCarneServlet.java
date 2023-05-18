@@ -12,23 +12,16 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-
-@WebServlet("/listar-pratos")
-public class ListCardapioServlet extends HttpServlet {
-
+@WebServlet("/listar-carnes")
+public class ListCarneServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Prato> pratos = new PratoDao().findAllPratos();
+
+        List<Prato> pratos = new PratoDao().findAllCarnes();
 
         req.setAttribute("pratos", pratos);
 
-
-        req.getRequestDispatcher("CardapioEdit.jsp").forward(req, resp);
-
+        req.getRequestDispatcher("Carnes.jsp").forward(req, resp);
     }
-
-
-
-
 }

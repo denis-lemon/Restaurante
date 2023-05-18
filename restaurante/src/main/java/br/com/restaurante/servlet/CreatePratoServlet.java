@@ -29,18 +29,18 @@ public class CreatePratoServlet extends HttpServlet {
 
         Map<String, String> parameters = uploadImage(request);
 
-        String id = parameters.get("id");
+        int id = Integer.parseInt(parameters.get("id"));
         String nome = parameters.get("nome");
         String tipo = parameters.get("tipo");
         String descricao = parameters.get("descricao");
         String preco = parameters.get("preco");
         String pratoImagePath = parameters.get("image");
 
-        Prato prato = new Prato(0, nome, tipo, descricao, preco, pratoImagePath);
+        Prato prato = new Prato(id, nome, tipo, descricao, preco, pratoImagePath);
         PratoDao pratoDao = new PratoDao();
 
 
-        if (id == null || id.isEmpty()) {
+        if (id == 0) {
 
             pratoDao.createPrato(prato);
 

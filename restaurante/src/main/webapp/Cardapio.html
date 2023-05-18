@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,8 +8,8 @@
     <title>Cardapio</title>
     <link rel="stylesheet" href="estilos/cardapio.css">
 </head>
-<body>
 
+<body>
 <header class="containerHeader">
     <div>
         <nav class="navCadastro">
@@ -33,14 +34,31 @@
     </div>
 </header>
 <main>
-    <div class="container-main">
-        <div class="produto1">
-          <img class="feijuca"
-            src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/12/comidas-tipicas-capa2019-01.jpg"
-            alt="Prato Feijoada">
+        <div id="pagina">
+            <h1>Nosso Cardapio</h1>
+            <hr>
+            <div class="container-opcoes">
+                <form action="/listar-entradas" method="get">
+                    <button class="opcao">ENTRADAS</button>
+                </form>
+                <form action="/listar-pratoPrincipal" method="get">
+                    <button class="opcao">PRATOS PRINCIPAIS</button>
+                </form>
+                <form action="/listar-carnes" method="get">
+                    <button class="opcao">CARNES</button>
+                </form>
+                <form action="/listar-acompanhamentos" method="get">
+                    <button class="opcao">ACOMPANHAMENTOS</button>
+                </form>
+                <form action="/listar-sobremesas" method="get">
+                    <button class="opcao">SOBREMESAS</button>
+                </form>
+                <form action="/listar-bebidas" method="get">
+                    <button class="opcao">BEBIDAS</button>
+                </form>
+            </div>
         </div>
-      </div>
-  
+    
 </main>
 <footer class="Rodape">
     <h5>&copyTodos os direitos reservados</h5>

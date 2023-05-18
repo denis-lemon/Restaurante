@@ -60,23 +60,37 @@ a {
 }
 
 /*MAIN*/
-.bemVindo {
+#pagina{
+    width: 700px;
+    margin: auto;
+}
+h1 {
     color: #daa520;
+    margin: 30px 0;
 }
 
-.feijuca{
-    width: 35vh;
-    margin-top: 20vh;
-    margin-left: 20vh;
+.container-opcoes{
+    max-width: 700px;
+    background-color: rgb(255, 255, 255);
+    margin: 50px auto;
+    padding: 10px;
+}
+.opcao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border: 1px solid black;
+    margin: 15px;
+    cursor: pointer;
+}
+.opcao:hover{
+    color: #daa520;
+    background: rgb(212, 212, 212);
+    transition: .3s;
 }
 
-.produto1{
-    position: absolute;
-    background-color: #ffffff;
-    padding-bottom: 70px;
-    border-radius: 5px;
-    width: 10vh;
-}
 
 /*FOOTER*/
 .Rodape {
