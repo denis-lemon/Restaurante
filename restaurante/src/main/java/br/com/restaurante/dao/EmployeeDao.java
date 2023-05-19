@@ -2,9 +2,8 @@ package br.com.restaurante.dao;
 
 import br.com.restaurante.model.Employee;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
+import java.sql.*;
+
 
 public class EmployeeDao {
     public void createEmployee(Employee employee){
@@ -34,7 +33,6 @@ public class EmployeeDao {
         }
 
     }
-
     }
 
 

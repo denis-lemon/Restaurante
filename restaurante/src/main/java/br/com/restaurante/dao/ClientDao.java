@@ -34,19 +34,19 @@ public class ClientDao {
             e.printStackTrace();
         }
     }
-    public static ArrayList<Client> listarClientes(){
+    public static ArrayList<Client> listarClientes() {
 
         ArrayList<Client> clients = new ArrayList<>();
 
-        String SQL= "SELECT ID, NAME, LASTNAME, CPF, EMAIL FROM CLIENTE";
+        String SQL = "SELECT ID, NAME, LASTNAME, CPF, EMAIL FROM CLIENTE";
 
-        try{
+        try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
             ResultSet rs = preparedStatement.executeQuery();
 
-            while(rs.next()){
+            while (rs.next()) {
                 String id = rs.getString(1);
                 String name = rs.getString(2);
                 String lastName = rs.getString(3);
@@ -68,12 +68,50 @@ public class ClientDao {
             connection.close();
             return clients;
 
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
             System.out.println("fail in database connection");
 
             return null;
         }
 
+    }
+
+        public static Client selecionarCliente(String email) {
+
+        Client cliente = new Client();
+
+        String SQL = "SELECT * FROM CLIENTE WHERE EMAIL = ?";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+
+            preparedStatement.setString(1, email);
+
+            ResultSet rs = preparedStatement.executeQuery();
+
+            while (rs.next()) {
+                String name = rs.getString(2);
+                String lastname = rs.getString(3);
+                String cpf = rs.getString(4);
+                String emailCliente = rs.getString(5);
+
+                cliente.setName(name);
+                cliente.setLastName(lastname);
+                cliente.setCpf(cpf);
+                cliente.setEmail(emailCliente);
+
+                return cliente;
+            }
+
+            connection.close();
+
+        } catch(Exception e) {
+            System.out.println(e);
+            }
+
+         return cliente;
     }
 }

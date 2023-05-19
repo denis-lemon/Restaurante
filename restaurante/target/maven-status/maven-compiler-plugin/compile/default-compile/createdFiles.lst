@@ -18,6 +18,7 @@ br\com\restaurante\servlet\CreateLoginServlet.class
 br\com\restaurante\servlet\ListCardapioServlet.class
 br\com\restaurante\servlet\ListReservaServlet.class
 br\com\restaurante\model\Employee.class
+br\com\restaurante\servlet\PerfilServlet.class
 br\com\restaurante\servlet\ListAcompanhamentoServlet.class
 br\com\restaurante\servlet\ListClientesServlet.class
 br\com\restaurante\servlet\CreateClientServlet.class
