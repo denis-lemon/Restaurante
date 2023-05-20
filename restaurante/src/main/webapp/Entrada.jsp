@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardapio</title>
-    <link rel="stylesheet" href="estilos/cardapio.css">
+    <link rel="stylesheet" href="estilos/cardapioOpcao.css">
 </head>
 
 <body>
@@ -39,36 +39,47 @@
         </nav>
     </div>
 </header>
-<main>
 
+<main>
     <div class="container-main">
-        <div class="container" >
-            <h1> Cardapio </h1>
-                <table class="tabela">
-                    <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>Tipo</th>
-                        <th>Descrição</th>
-                        <th>Preço</th>
-                        <th>Imagem</th>
-                    </tr>
-                    <c:forEach var="prato" items="${pratos}">
-                        <tr>
-                            <td>${prato.id}</td>
-                            <td>${prato.nome}</td>
-                            <td>${prato.tipo}</td>
-                            <td>${prato.descricao}</td>
-                            <td>R$  ${prato.preco}</td>
-                            <td>
-                                <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${prato.image}">
-                                    <img style="width: 200px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${prato.image}" alt="...">
-                                </a>
-                            </td>
-                        </tr>
-                    </c:forEach>
-                </table>
-            </div>
+        <div class="menu-opcao">
+            <form action="/listar-entradas" method="get">
+                <button class="opcao">ENTRADAS</button>
+            </form>
+            <form action="/listar-pratoPrincipal" method="get">
+                <button class="opcao">PRATOS PRINCIPAIS</button>
+            </form>
+            <form action="/listar-carnes" method="get">
+                <button class="opcao">CARNES</button>
+            </form>
+            <form action="/listar-acompanhamentos" method="get">
+                <button class="opcao">ACOMPANHAMENTOS</button>
+            </form>
+            <form action="/listar-sobremesas" method="get">
+                <button class="opcao">SOBREMESAS</button>
+            </form>
+            <form action="/listar-bebidas" method="get">
+                <button class="opcao">BEBIDAS</button>
+            </form>
+        </div>
+
+        <div class="container-cardapio">
+            <c:forEach var="prato" items="${pratos}">
+                <div class="cada-prato">
+                    <div>
+                    <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${prato.image}">
+                        <img style="width: 160px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${prato.image}" alt="...">
+                    </a>
+                    </div>
+                    <div id="abc">
+                        <div>${prato.nome}</div>
+                        <div>R$  ${prato.preco}</div>
+                    </div>
+                    <div style="font-size: 12px;" >${prato.descricao}</div>
+
+                </div>
+            </c:forEach>
+        </div>
     </div>
 </main>
 <footer class="Rodape">

@@ -58,7 +58,7 @@ public class PratoDao {
 
             while (resultSet.next()) {
 
-                int pratoId = resultSet.getInt("id");
+                String pratoId = resultSet.getString("id");
                 String Nome = resultSet.getString("nome");
                 String tipo = resultSet.getString("tipo");
                 String descricao = resultSet.getString("descricao");
@@ -127,7 +127,7 @@ public class PratoDao {
             preparedStatement.setString(3, prato.getDescricao());
             preparedStatement.setString(4, prato.getPreco());
             preparedStatement.setString(5, prato.getImage());
-            preparedStatement.setInt(6, prato.getId());
+            preparedStatement.setString(6, prato.getId());
             preparedStatement.execute();
 
             System.out.println("success in update prato");
@@ -160,7 +160,7 @@ public class PratoDao {
 
             while (resultSet.next()) {
 
-                int pratoId = resultSet.getInt("id");
+                String pratoId = resultSet.getString("id");
                 String Nome = resultSet.getString("nome");
                 String tipo = resultSet.getString("tipo");
                 String descricao = resultSet.getString("descricao");
@@ -204,7 +204,7 @@ public class PratoDao {
 
             while (resultSet.next()) {
 
-                int pratoId = resultSet.getInt("id");
+                String pratoId = resultSet.getString("id");
                 String Nome = resultSet.getString("nome");
                 String tipo = resultSet.getString("tipo");
                 String descricao = resultSet.getString("descricao");
@@ -248,7 +248,7 @@ public class PratoDao {
 
             while (resultSet.next()) {
 
-                int pratoId = resultSet.getInt("id");
+                String pratoId = resultSet.getString("id");
                 String Nome = resultSet.getString("nome");
                 String tipo = resultSet.getString("tipo");
                 String descricao = resultSet.getString("descricao");
@@ -292,7 +292,7 @@ public class PratoDao {
 
             while (resultSet.next()) {
 
-                int pratoId = resultSet.getInt("id");
+                String pratoId = resultSet.getString("id");
                 String Nome = resultSet.getString("nome");
                 String tipo = resultSet.getString("tipo");
                 String descricao = resultSet.getString("descricao");
@@ -336,7 +336,7 @@ public class PratoDao {
 
             while (resultSet.next()) {
 
-                int pratoId = resultSet.getInt("id");
+                String pratoId = resultSet.getString("id");
                 String Nome = resultSet.getString("nome");
                 String tipo = resultSet.getString("tipo");
                 String descricao = resultSet.getString("descricao");
@@ -380,7 +380,7 @@ public class PratoDao {
 
             while (resultSet.next()) {
 
-                int pratoId = resultSet.getInt("id");
+                String pratoId = resultSet.getString("id");
                 String Nome = resultSet.getString("nome");
                 String tipo = resultSet.getString("tipo");
                 String descricao = resultSet.getString("descricao");

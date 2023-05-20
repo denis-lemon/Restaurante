@@ -29,7 +29,7 @@ public class CreatePratoServlet extends HttpServlet {
 
         Map<String, String> parameters = uploadImage(request);
 
-        int id = Integer.parseInt(parameters.get("id"));
+        String id = parameters.get("id");
         String nome = parameters.get("nome");
         String tipo = parameters.get("tipo");
         String descricao = parameters.get("descricao");
@@ -40,7 +40,7 @@ public class CreatePratoServlet extends HttpServlet {
         PratoDao pratoDao = new PratoDao();
 
 
-        if (id == 0) {
+        if (id == null || id.isEmpty()) {
 
             pratoDao.createPrato(prato);
 

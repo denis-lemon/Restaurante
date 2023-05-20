@@ -60,31 +60,28 @@ a {
 }
 
 /*MAIN*/
-#pagina{
-    max-width: 700px;
-    margin: 0 auto;
-}
-h1 {
-    color: #daa520;
-    margin-top: 30px;
-}
-hr{
-    margin-bottom: 20px;
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container-opcoes{
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
+.container-main{
+    display:flex;
+    margin: 40px;
+}
+.menu-opcao{
+    padding: 10px;
+    width: 400px;
 }
 .opcao{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 50px;
+    justify-content: center;
     border: 1px solid black;
-    margin: 10px;
+    margin: 15px 0px;
     cursor: pointer;
 }
 .opcao:hover{
@@ -93,7 +90,22 @@ hr{
     background: rgb(212, 212, 212);
     transition: .3s;
 }
-
+.container-cardapio{
+    display:flex;
+    flex-wrap: wrap;
+    width: 570px;
+    padding: 25px;
+}
+#abc{
+    display:flex;
+    justify-content: space-between;
+}
+.cada-prato{
+    margin: 15px;
+    font-size: 14px;
+    max-width: 160px;
+    height: 180px;
+}
 
 /*FOOTER*/
 .Rodape {
@@ -101,9 +113,8 @@ hr{
     padding: 10px;
     text-align: center;
     color: #ffffff;
-    position: absolute;
     font-size: 12pt;
     width: 100%;
     height: 10px;
-    bottom: 0;
+
 }
