@@ -23,9 +23,12 @@ public class ListCardapioServlet extends HttpServlet {
 
         req.setAttribute("pratos", pratos);
 
+
         req.getRequestDispatcher("CardapioEdit.jsp").forward(req, resp);
 
     }
+
+
 
 
 }

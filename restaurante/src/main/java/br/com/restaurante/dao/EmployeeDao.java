@@ -3,7 +3,11 @@ package br.com.restaurante.dao;
 import br.com.restaurante.model.Employee;
 
 import java.sql.*;
+<<<<<<< HEAD
 import java.util.ArrayList;
+=======
+
+>>>>>>> 90be1ada6ef0837bc6069b86359e225095a570ff
 
 public class EmployeeDao {
     public void createEmployee(Employee employee){
@@ -33,6 +37,7 @@ public class EmployeeDao {
         }
 
     }
+<<<<<<< HEAD
     public static ArrayList<Employee> listarEmployee() {
 
         ArrayList<Employee> employees = new ArrayList<>();
@@ -72,6 +77,8 @@ public class EmployeeDao {
 
             return null;
         }
+=======
+>>>>>>> 90be1ada6ef0837bc6069b86359e225095a570ff
     }
     public void deleteEmployee(String employeeId){
 

@@ -36,7 +36,7 @@ public class CreatePratoServlet extends HttpServlet {
         String preco = parameters.get("preco");
         String pratoImagePath = parameters.get("image");
 
-        Prato prato = new Prato(0, nome, tipo, descricao, preco, pratoImagePath);
+        Prato prato = new Prato(id, nome, tipo, descricao, preco, pratoImagePath);
         PratoDao pratoDao = new PratoDao();
 
 

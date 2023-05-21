@@ -1,9 +1,11 @@
 package br.com.restaurante.servlet;
 
+import br.com.restaurante.dao.ClientDao;
 import br.com.restaurante.dao.LoginDao;
 import br.com.restaurante.model.Client;
 import br.com.restaurante.model.Employee;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -44,7 +46,7 @@ public class CreateLoginServlet extends HttpServlet {
 
         if(valido){
             request.getSession().setAttribute("email", email);
-             response.sendRedirect("Home2.jsp");
+            response.sendRedirect("/perfil-cliente");
 
         } else if (validoF) {
             request.getSession().setAttribute("email", email);
@@ -59,4 +61,7 @@ public class CreateLoginServlet extends HttpServlet {
         System.out.println(e + "erro");
     }
     }
+
+
+
 }

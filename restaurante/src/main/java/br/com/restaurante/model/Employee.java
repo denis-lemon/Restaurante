@@ -22,6 +22,14 @@ public class Employee {
         this.password = password;
     }
 
+    public Employee( String name, String lastName, String cpf, String email, String password) {
+        this.name = name;
+        this.lastName = lastName;
+        this.cpf = cpf;
+        this.email = email;
+        this.password = password;
+    }
+
     public String getId() {
         return id;
     }

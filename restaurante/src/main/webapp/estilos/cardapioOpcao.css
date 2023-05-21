@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffec;
+    overflow-x: hidden;
+}
+
+/*CABEÇALHO*/
+.containerHeader {
+    background-color: #6B1108;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.logo {
+    width: 15vh;
+    margin-top: -67px;
+    margin-right: 17px;
+}
+
+a:hover {
+    color: #ffffff;
+    transition: all .3s ease-out;
+}
+
+.navCadastro {
+    position: absolute;
+    top: 1vh;
+    right: 10vh;
+}
+
+.LoginECadastro {
+    display: inline;
+    font-size: 12pt;
+}
+
+.navOpcoes li {
+    position: relative;
+    top: 2vh;
+    left: 73vh;
+    padding: 30px;
+}
+
+.fonteCabecalho {
+    display: inline;
+    font-size: 15pt;
+}
+
+a {
+    text-decoration: none;
+    color: #daa520;
+}
+
+/*MAIN*/
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main{
+    display:flex;
+    margin: 40px;
+}
+.menu-opcao{
+    padding: 10px;
+    width: 400px;
+}
+.opcao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+.opcao:hover{
+    border: 1px solid #daa520;
+    color: #daa520;
+    background: rgb(212, 212, 212);
+    transition: .3s;
+}
+.container-cardapio{
+    display:flex;
+    flex-wrap: wrap;
+    width: 570px;
+    padding: 25px;
+}
+#abc{
+    display:flex;
+    justify-content: space-between;
+}
+.cada-prato{
+    margin: 15px;
+    font-size: 14px;
+    max-width: 160px;
+    height: 180px;
+}
+
+/*FOOTER*/
+.Rodape {
+    background-color: #6B1108;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12pt;
+    width: 100%;
+    height: 10px;
+
+}

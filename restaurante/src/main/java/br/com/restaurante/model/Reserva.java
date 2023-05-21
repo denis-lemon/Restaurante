@@ -10,6 +10,8 @@ public class Reserva {
     private String ambiente;
     private String obs;
 
+    private String status;
+
     public String getData() {
         return data;
     }
@@ -56,5 +58,13 @@ public class Reserva {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
