@@ -81,6 +81,31 @@ public class ReservaDao {
             return null;
         }
     }
+    public void deleteReserva(String reservaId){
+        String SQL = "DELETE FROM RESERVA WHERE ID = ?";
+        try{
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, reservaId);
+
+            preparedStatement.execute();
+
+            System.out.println("success on delete employee with id: " + reservaId);
+
+            connection.close();
+
+
+
+        } catch (SQLException e) {
+
+            System.out.println(e);
+        }
+
+    }
 
 }
 

@@ -22,7 +22,7 @@ public class CreateReservaServlet extends HttpServlet {
         String hora = request.getParameter("hora");
         String qntPessoas = request.getParameter("qntPessoas");
         String ambiente = request.getParameter("ambiente");
-        String obs = request.getParameter("obs");
+        String obs = request.getParameter("extra");
 
         Reserva reserva = new Reserva();
         reserva.setData(data);

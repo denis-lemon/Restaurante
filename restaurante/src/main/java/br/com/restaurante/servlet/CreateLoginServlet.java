@@ -34,6 +34,7 @@ public class CreateLoginServlet extends HttpServlet {
         cliente.setPassword(password);
 
         Employee employee = new Employee();
+
         employee.setEmail(email);
         employee.setPassword(password);
 

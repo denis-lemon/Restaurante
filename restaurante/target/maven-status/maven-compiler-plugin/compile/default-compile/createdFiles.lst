@@ -1,4 +1,5 @@
 br\com\restaurante\dao\ClientDao.class
+br\com\restaurante\servlet\DeleteEmployee.class
 br\com\restaurante\model\Prato.class
 br\com\restaurante\model\Reserva.class
 br\com\restaurante\servlet\CreatePratoServlet.class
@@ -10,6 +11,8 @@ br\com\restaurante\dao\ReservaDao.class
 br\com\restaurante\model\Client.class
 br\com\restaurante\servlet\CreateLoginServlet.class
 br\com\restaurante\servlet\ListCardapioServlet.class
+br\com\restaurante\servlet\ListFuncionariosServlet.class
+br\com\restaurante\servlet\DeleteReservaServlet.class
 br\com\restaurante\servlet\ListReservaServlet.class
 br\com\restaurante\model\Employee.class
 br\com\restaurante\servlet\ListClientesServlet.class
