@@ -46,7 +46,10 @@
                     <td>Pendente</td>
                     <td>
                      <button type="button" class="button1">Confirmar</button>
-                     <button type="button" class="button2">Cancelar</button>
+                     <form action = "/delete-reserva" method ="post">
+                     <input type="hidden" name="id" value="<%=lista.get(i).getId()%>"/>
+                     <input type="submit" value ="Delete"/>
+                     </form>
                      </td>
                     </tr>
                     <% } %>

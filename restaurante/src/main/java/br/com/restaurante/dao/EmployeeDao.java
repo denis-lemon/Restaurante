@@ -3,7 +3,11 @@ package br.com.restaurante.dao;
 import br.com.restaurante.model.Employee;
 
 import java.sql.*;
+<<<<<<< HEAD
+import java.util.ArrayList;
+=======
 
+>>>>>>> 90be1ada6ef0837bc6069b86359e225095a570ff
 
 public class EmployeeDao {
     public void createEmployee(Employee employee){
@@ -33,7 +37,76 @@ public class EmployeeDao {
         }
 
     }
+<<<<<<< HEAD
+    public static ArrayList<Employee> listarEmployee() {
+
+        ArrayList<Employee> employees = new ArrayList<>();
+
+        String SQL = "SELECT ID, NAME, LASTNAME, CPF, EMAIL FROM EMPLOYEE";
+
+        try{
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            ResultSet rs = preparedStatement.executeQuery();
+
+            while(rs.next()){
+                String id = rs.getString(1);
+                String name = rs.getString(2);
+                String lastName = rs.getString(3);
+                String cpf = rs.getString(4);
+                String email = rs.getString(5);
+
+                Employee employee = new Employee();
+                employees.add(employee);
+
+                employee.setId(id);
+                employee.setName(name);
+                employee.setLastName(lastName);
+                employee.setCpf(cpf);
+                employee.setEmail(email);
+
+            }
+            System.out.println("sucess in Select * employees");
+            connection.close();
+            return employees;
+
+        }catch (Exception e){
+            System.out.println(e);
+            System.out.println("fail in database connection");
+
+            return null;
+        }
+=======
+>>>>>>> 90be1ada6ef0837bc6069b86359e225095a570ff
     }
+    public void deleteEmployee(String employeeId){
+
+        String SQL = "DELETE FROM EMPLOYEE WHERE ID = ?";
+
+        try{
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+           PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, employeeId);
+
+            preparedStatement.execute();
+
+            System.out.println("success on delete employee with id: " + employeeId);
+
+            connection.close();
+
+
+
+        } catch (SQLException e) {
+
+            System.out.println(e);
+        }
+    }
+}
 
 
 
