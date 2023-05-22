@@ -10,7 +10,7 @@ public class Reserva {
     private String ambiente;
     private String obs;
 
-    private String status;
+    private String status = "Pendente";
 
     private String nome;
     private String email;

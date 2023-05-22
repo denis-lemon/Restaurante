@@ -94,11 +94,13 @@ public class ClientDao {
             ResultSet rs = preparedStatement.executeQuery();
 
             while (rs.next()) {
+                String id = rs.getString(1);
                 String name = rs.getString(2);
                 String lastname = rs.getString(3);
                 String cpf = rs.getString(4);
                 String emailCliente = rs.getString(5);
 
+                cliente.setId(id);
                 cliente.setName(name);
                 cliente.setLastName(lastname);
                 cliente.setCpf(cpf);

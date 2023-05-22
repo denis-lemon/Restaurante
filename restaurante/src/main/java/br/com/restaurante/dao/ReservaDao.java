@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class ReservaDao {
 
     public void createReserva(Reserva reserva) {
-        String SQL = "INSERT INTO RESERVAS (DATA, HORA, QNTPESSOAS, AMBIENTE, OBS, NOME, EMAIL, CLIENTEID) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        String SQL = "INSERT INTO RESERVAS (DATA, HORA, QNTPESSOAS, AMBIENTE, OBS,STATUS, NOME, EMAIL, CLIENTEID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -22,9 +22,10 @@ public class ReservaDao {
             preparedStatement.setString(3, reserva.getQntPessoas());
             preparedStatement.setString(4, reserva.getAmbiente());
             preparedStatement.setString(5, reserva.getObs());
-            preparedStatement.setString(6, reserva.getNome());
-            preparedStatement.setString(7, reserva.getEmail());
-            preparedStatement.setString(8, reserva.getClienteId());
+            preparedStatement.setString(6, reserva.getStatus());
+            preparedStatement.setString(7, reserva.getNome());
+            preparedStatement.setString(8, reserva.getEmail());
+            preparedStatement.setString(9, reserva.getClienteId());
 
 
             preparedStatement.execute();
@@ -58,8 +59,10 @@ public class ReservaDao {
                 String qntPessoas = rs.getString(4);
                 String ambiente = rs.getString(5);
                 String obs = rs.getString(6);
-                String nome = rs.getString(7);
-                String email = rs.getString(8);
+                String status = rs.getString(7);
+                String nome = rs.getString(8);
+                String email = rs.getString(9);
+                String idCliente = rs.getString(10);
 
                 Reserva r = new Reserva();
                 reservas.add(r);
@@ -70,8 +73,10 @@ public class ReservaDao {
                 r.setQntPessoas(qntPessoas);
                 r.setAmbiente(ambiente);
                 r.setObs(obs);
+                r.setStatus(status);
                 r.setNome(nome);
                 r.setEmail(email);
+                r.setClienteId(idCliente);
 
             }
 
@@ -89,9 +94,10 @@ public class ReservaDao {
             return null;
         }
     }
-    public void deleteReserva(String reservaId){
+
+    public void deleteReserva(String reservaId) {
         String SQL = "DELETE FROM RESERVAS WHERE ID = ?";
-        try{
+        try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             System.out.println("success in database connection");
@@ -107,12 +113,32 @@ public class ReservaDao {
             connection.close();
 
 
-
         } catch (SQLException e) {
 
             System.out.println(e);
         }
 
+    }
+
+    public static boolean updateReserva(String reservaId, String novoStatus) {
+
+        String SQL = "UPDATE RESERVAS SET STATUS = ?  WHERE ID = ?";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, novoStatus);
+            preparedStatement.setString(2, reservaId);
+
+
+            int linhasAfetadas = preparedStatement.executeUpdate();
+            return linhasAfetadas > 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
 }
@@ -124,6 +150,7 @@ public class ReservaDao {
 //QNTPESSOAS VARCHAR,
 //AMBIENTE VARCHAR,
 //OBS VARCHAR,
+//STATUS VARCHAR,
 //NOME VARCHAR,
 //EMAIL VARCHAR,
 //CLIENTEID BIGINT,
