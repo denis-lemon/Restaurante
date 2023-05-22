@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class ReservaDao {
 
     public void createReserva(Reserva reserva) {
-        String SQL = "INSERT INTO RESERVAS (DATA, HORA, QNTPESSOAS, AMBIENTE, OBS) VALUES (?, ?, ?, ?, ?)";
+        String SQL = "INSERT INTO RESERVAS (DATA, HORA, QNTPESSOAS, AMBIENTE, OBS, NOME, EMAIL, CLIENTEID) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -22,6 +22,10 @@ public class ReservaDao {
             preparedStatement.setString(3, reserva.getQntPessoas());
             preparedStatement.setString(4, reserva.getAmbiente());
             preparedStatement.setString(5, reserva.getObs());
+            preparedStatement.setString(6, reserva.getNome());
+            preparedStatement.setString(7, reserva.getEmail());
+            preparedStatement.setString(8, reserva.getClienteId());
+
 
             preparedStatement.execute();
             connection.close();
@@ -54,6 +58,8 @@ public class ReservaDao {
                 String qntPessoas = rs.getString(4);
                 String ambiente = rs.getString(5);
                 String obs = rs.getString(6);
+                String nome = rs.getString(7);
+                String email = rs.getString(8);
 
                 Reserva r = new Reserva();
                 reservas.add(r);
@@ -64,6 +70,8 @@ public class ReservaDao {
                 r.setQntPessoas(qntPessoas);
                 r.setAmbiente(ambiente);
                 r.setObs(obs);
+                r.setNome(nome);
+                r.setEmail(email);
 
             }
 
@@ -110,3 +118,13 @@ public class ReservaDao {
 }
 
 
+//CREATE TABLE RESERVAS (ID BIGINT AUTO_INCREMENT PRIMARY KEY,
+//DATA VARCHAR,
+//HORA VARCHAR,
+//QNTPESSOAS VARCHAR,
+//AMBIENTE VARCHAR,
+//OBS VARCHAR,
+//NOME VARCHAR,
+//EMAIL VARCHAR,
+//CLIENTEID BIGINT,
+//FOREIGN KEY (CLIENTEID) REFERENCES CLIENTE (ID));

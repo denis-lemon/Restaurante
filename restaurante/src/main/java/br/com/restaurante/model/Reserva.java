@@ -12,6 +12,10 @@ public class Reserva {
 
     private String status;
 
+    private String nome;
+    private String email;
+    private String clienteId;
+
     public String getData() {
         return data;
     }
@@ -67,4 +71,29 @@ public class Reserva {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getClienteId() {
+        return clienteId;
+    }
+
+    public void setClienteId(String clienteId) {
+        this.clienteId = clienteId;
+    }
 }
+

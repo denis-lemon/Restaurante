@@ -1,3 +1,8 @@
+<%@page language="java" contentType="text/html; charset-UTF-8" pageEncoding="UTF-8"%>
+<%@page import="java.util.ArrayList"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -84,6 +89,7 @@
                 <label id="l1" for="extra">Deseja solicitar algo especial?</label><br>
                 <textarea class="center" name="extra" id="extra" cols="50" rows="5"></textarea>
                 <br><br>
+                <input type="hidden" name="clienteId" value="<%= session.getAttribute("id") %>">
                 <button class="button" type="submit">Solicitar Reserva</button>
             </form>
         </div>

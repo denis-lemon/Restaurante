@@ -21,6 +21,8 @@
                 <table id="tabela" class="table">
                     <thead>
                         <tr>
+                            <th scope="col">Nome do Cliente</th>
+                            <th scope="col">Email do Cliente</th>
                             <th scope="col">Id</th>
                             <th scope="col">Data</th>
                             <th scope="col">Hora</th>
@@ -37,6 +39,8 @@
                      %>
 
                     <tr scope="row">
+                    <td><%=lista.get(i).getNome()%>></td>
+                    <td><%=lista.get(i).getEmail()%>></td>
                     <td id= <%=lista.get(i).getId()%> ><%=lista.get(i).getId()%></td>
                     <td><%=lista.get(i).getData()%>></td>
                     <td><%=lista.get(i).getHora()%></td>
