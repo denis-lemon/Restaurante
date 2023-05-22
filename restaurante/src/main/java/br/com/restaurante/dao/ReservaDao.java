@@ -90,7 +90,7 @@ public class ReservaDao {
         }
     }
     public void deleteReserva(String reservaId){
-        String SQL = "DELETE FROM RESERVA WHERE ID = ?";
+        String SQL = "DELETE FROM RESERVAS WHERE ID = ?";
         try{
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
