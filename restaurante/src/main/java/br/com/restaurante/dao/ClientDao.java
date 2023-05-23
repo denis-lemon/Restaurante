@@ -9,11 +9,11 @@ import java.util.ArrayList;
 
 public class ClientDao {
 
-    public void createClient(Client client){
+    public void createClient(Client client) {
         String SQL = "INSERT INTO CLIENTE (NAME, LASTNAME, CPF, EMAIL, PASSWORD) VALUES (?, ?, ?, ?, ?)";
 
         try {
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
@@ -22,18 +22,19 @@ public class ClientDao {
             preparedStatement.setString(2, client.getLastName());
             preparedStatement.setString(3, client.getCpf());
             preparedStatement.setString(4, client.getEmail());
-            preparedStatement.setString(5,client.getPassword());
+            preparedStatement.setString(5, client.getPassword());
 
             preparedStatement.execute();
             connection.close();
 
             System.out.println("success in connection");
-        } catch (Exception e){
+        } catch (Exception e) {
 
-            System.out.println("fail in connection"+ e.getMessage());
+            System.out.println("fail in connection" + e.getMessage());
             e.printStackTrace();
         }
     }
+
     public static ArrayList<Client> listarClientes() {
 
         ArrayList<Client> clients = new ArrayList<>();
@@ -77,7 +78,7 @@ public class ClientDao {
 
     }
 
-        public static Client selecionarCliente(String email) {
+    public static Client selecionarCliente(String email) {
 
         Client cliente = new Client();
 
@@ -93,11 +94,13 @@ public class ClientDao {
             ResultSet rs = preparedStatement.executeQuery();
 
             while (rs.next()) {
+                String id = rs.getString(1);
                 String name = rs.getString(2);
                 String lastname = rs.getString(3);
                 String cpf = rs.getString(4);
                 String emailCliente = rs.getString(5);
 
+                cliente.setId(id);
                 cliente.setName(name);
                 cliente.setLastName(lastname);
                 cliente.setCpf(cpf);
@@ -110,8 +113,33 @@ public class ClientDao {
 
         } catch(Exception e) {
             System.out.println(e);
-            }
+        }
 
-         return cliente;
+        return cliente;
+    }
+
+    public String getClientIdByEmail(String email) {
+
+        String clienteId = null;
+
+        String SQL = "SELECT ID FROM CLIENTE WHERE EMAIL = ?";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setString(1, email);
+
+            ResultSet rs = preparedStatement.executeQuery();
+
+            if (rs.next()) {
+                clienteId = rs.getString("id");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return clienteId;
+
+
     }
 }

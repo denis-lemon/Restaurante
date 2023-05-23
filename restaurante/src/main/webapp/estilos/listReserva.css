@@ -40,7 +40,9 @@ h1 {
 	border-radius: 5px;
 	border: 0;
 	cursor: pointer;
-	 margin: 0 15px;
+	margin: 0 15px;
+	margin-right: 10px;
+
 }
 
 .button2 {
@@ -53,6 +55,8 @@ h1 {
 	border-radius: 5px;
 	border: 0;
 	cursor: pointer;
+	display: inline;
+
 }
 
 

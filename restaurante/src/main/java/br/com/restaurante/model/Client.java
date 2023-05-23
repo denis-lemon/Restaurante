@@ -9,6 +9,8 @@ public class Client {
     private String email;
     private String password;
 
+    private String idReserva;
+
     public Client() {
     }
 
@@ -66,5 +68,13 @@ public class Client {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getIdReserva() {
+        return idReserva;
+    }
+
+    public void setIdReserva(String idReserva) {
+        this.idReserva = idReserva;
     }
 }

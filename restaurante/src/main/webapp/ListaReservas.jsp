@@ -21,7 +21,10 @@
                 <table id="tabela" class="table">
                     <thead>
                         <tr>
-                            <th scope="col">Id</th>
+                            <th scope="col">ID Cliente</th>
+                            <th scope="col">Nome do Cliente</th>
+                            <th scope="col">Email do Cliente</th>
+                            <th scope="col">ID Reserva</th>
                             <th scope="col">Data</th>
                             <th scope="col">Hora</th>
                             <th scope="col" >Pessoas</th>
@@ -37,18 +40,24 @@
                      %>
 
                     <tr scope="row">
+                    <td><%=lista.get(i).getClienteId()%>></td>
+                    <td><%=lista.get(i).getNome()%>></td>
+                    <td><%=lista.get(i).getEmail()%>></td>
                     <td id= <%=lista.get(i).getId()%> ><%=lista.get(i).getId()%></td>
                     <td><%=lista.get(i).getData()%>></td>
                     <td><%=lista.get(i).getHora()%></td>
                     <td><%=lista.get(i).getQntPessoas()%></td>
                     <td><%=lista.get(i).getAmbiente()%></td>
                     <td><%=lista.get(i).getObs()%></td>
-                    <td>Pendente</td>
+                    <td><%=lista.get(i).getStatus()%></td>
                     <td>
-                     <button type="button" class="button1">Confirmar</button>
+                     <form action = "update-reserva" method="post">
+                     <input type="hidden" name="id" value="<%=lista.get(i).getId()%>"/>
+                     <button class="button1" type="submit">Confirmar</button>
+                     </form>
                      <form action = "/delete-reserva" method ="post">
                      <input type="hidden" name="id" value="<%=lista.get(i).getId()%>"/>
-                     <input type="submit" value ="Delete"/>
+                     <button class="button2" type="submit">Cancelar</button>
                      </form>
                      </td>
                     </tr>

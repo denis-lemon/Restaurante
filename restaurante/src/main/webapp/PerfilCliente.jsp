@@ -21,6 +21,7 @@ Client cliente = (Client) request.getAttribute("cliente");
 
                         </div>
                         <div class="itemDados">
+                         <input type="text" class="campo" placeholder="ID:" value=<%= cliente.getId() %> readonly>
                             <input type="text" class="campo" placeholder="Nome do titular:" value=<%= cliente.getName() %> readonly>
                             <input type="text" class="campo" placeholder="Sobrenome : " value= <%= cliente.getLastName() %>  readonly >
                             <input type="text" class="campo" placeholder="CPF do titular:" value= <%= cliente.getCpf() %>  readonly>

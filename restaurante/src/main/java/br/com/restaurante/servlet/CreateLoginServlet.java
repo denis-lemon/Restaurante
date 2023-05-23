@@ -36,7 +36,6 @@ public class CreateLoginServlet extends HttpServlet {
         cliente.setPassword(password);
 
         Employee employee = new Employee();
-
         employee.setEmail(email);
         employee.setPassword(password);
 
@@ -45,6 +44,7 @@ public class CreateLoginServlet extends HttpServlet {
 
 
         if(valido){
+
             request.getSession().setAttribute("email", email);
             response.sendRedirect("/perfil-cliente");
 
