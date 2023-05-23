@@ -5,7 +5,6 @@ import br.com.restaurante.model.Employee;
 import java.sql.*;
 import java.util.ArrayList;
 
-
 public class EmployeeDao {
     public void createEmployee(Employee employee){
         String SQL = "INSERT INTO EMPLOYEE (NAME, LASTNAME, CPF, EMAIL, PASSWORD) VALUES (?, ?, ?, ?,?)";
