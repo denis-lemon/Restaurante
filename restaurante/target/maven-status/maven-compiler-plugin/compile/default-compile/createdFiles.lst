@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-br\com\restaurante\dao\ClientDao.class
 br\com\restaurante\servlet\DeleteEmployee.class
-=======
->>>>>>> 90be1ada6ef0837bc6069b86359e225095a570ff
 br\com\restaurante\model\Prato.class
 br\com\restaurante\model\Reserva.class
 br\com\restaurante\servlet\CreateEmployeeServlet.class

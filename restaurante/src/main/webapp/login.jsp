@@ -18,7 +18,7 @@
         <nav class="navCadastro">
             <ul>
                 <li class="LoginECadastro"> Acesse seu <a href="login.jsp">Login</a></li>
-                <li class="LoginECadastro"> ou <a href="Cadastro.html">Cadastre se</a></li>
+                <li class="LoginECadastro"> ou <a href="Cadastro.jsp">Cadastre se</a></li>
             </ul>
         </nav>
         <nav class="navOpcoes">
