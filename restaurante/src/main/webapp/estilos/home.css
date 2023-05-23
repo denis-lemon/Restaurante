@@ -7,10 +7,9 @@
 }
 
 body {
-    background-color: #ffffec;
     overflow-x: hidden;
-    background-image: url(/Restaurante/restaurante/src/main/webapp/img/fundo.jpg);
 }
+
 
 /*HEADER*/
 .containerHeader {
@@ -64,28 +63,90 @@ a {
 
 /*MAIN*/
 
-.BemVindo {
-    color: #daa520;
-    font-size: bold;
-    font-size: 25px;
-    padding: 5px;
+.fundo {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url(".\webapp\img\fundo.jpg");
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(5px) brightness(0.80);
 }
 
-.texto{
-    background-color: #6B1108;
-    height: 80vh;
-    width: 50%;
-    margin: 40px auto;
-    text-align: center;
+.galeria {
+    margin: auto;
+    width: 1200px;
+    height: 650px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.galeria .fotos {
+    width: 501%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.galeria .fotos img {
+    width: 19.9%;
+    filter: brightness(0.35);
     border-radius: 5px;
-    padding: 0px 15px;
 }
 
-.loren{
-    font-size: 20px;
-    color: rgb(223, 219, 219);
-    margin-top: 30px;
-    text-align: justify;
+.descricao{
+    width: 1000px;
+    margin: 5px 150px 10px 450px;
+    padding: 10px;
+    background-color: #dfddddee;
+    color: #daa520;
+    font-size: 18px;
+}
+
+@keyframes animacao {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -400%;
+    }
 }
 
 /*RODAPÉ*/
