@@ -114,6 +114,9 @@ hr{
     transition: .3s;
 }
 
+.reserva{
+    background-color: #ffffec;
+}
 
 /*FOOTER*/
 .Rodape {

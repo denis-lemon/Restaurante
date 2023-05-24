@@ -93,7 +93,7 @@
                 <button class="button" type="submit">Solicitar Reserva</button>
             </form>
         </div>
-        <div >
+        <div class="reserva">
             <h2 >Não encontrou a data e o horário desejado?</h2>
             <h2 class="mr-70">Entre na Fila de Espera!</h2><br><br>
             <button class="button">Entrar na Fila de Espera</button>
