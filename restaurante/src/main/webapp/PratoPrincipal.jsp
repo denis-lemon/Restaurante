@@ -29,7 +29,7 @@
                 <li class="fonteCabecalho"><a href="home.html">Home</a></li>
                 <li class="fonteCabecalho"><a href="Sobre.html">Sobre</a></li>
                 <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
-                <li class="fonteCabecalho"><a href="Reserva.html">Reservas</a></li>
+                <li class="fonteCabecalho"><a href="Reserva.jsp">Reservas</a></li>
             </ul>
         </nav>
         <nav class="reserva">
@@ -41,6 +41,7 @@
 </header>
 
 <main>
+    <div class="fundo"></div>
     <div class="container-main">
         <div class="menu-opcao">
             <form action="/listar-entradas" method="get">

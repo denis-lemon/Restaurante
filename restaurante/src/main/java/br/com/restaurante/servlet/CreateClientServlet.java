@@ -37,6 +37,6 @@ public class CreateClientServlet extends HttpServlet {
 
         response.sendRedirect(request.getContextPath() + "/login");
 
-        }
-
     }
+
+}

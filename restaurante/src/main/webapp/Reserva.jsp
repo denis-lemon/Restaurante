@@ -29,7 +29,7 @@
                 <li class="fonteCabecalho"><a href="home.html">Home</a></li>
                 <li class="fonteCabecalho"><a href="Sobre.html">Sobre</a></li>
                 <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
-                <li class="fonteCabecalho"><a href="Reserva.html">Reservas</a></li>
+                <li class="fonteCabecalho"><a href="Reserva.jsp">Reservas</a></li>
             </ul>
         </nav>
         <nav class="reserva">
@@ -40,7 +40,7 @@
     </div>
 </header>
 <main>
-
+<div class="fundo"></div>
     <h1 class="center">Reservas</h1>
     <div class="container mb-50">
 
@@ -93,7 +93,7 @@
                 <button class="button" type="submit">Solicitar Reserva</button>
             </form>
         </div>
-        <div >
+        <div class="reserva">
             <h2 >Não encontrou a data e o horário desejado?</h2>
             <h2 class="mr-70">Entre na Fila de Espera!</h2><br><br>
             <button class="button">Entrar na Fila de Espera</button>

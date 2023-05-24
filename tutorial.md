@@ -53,6 +53,7 @@ OBS VARCHAR
 Onde o usuário irá se cadastrar, para poder realizar reservas, onde deverá 
 inserir os dados e terminar cadastro.
 CREATE TABLE CLIENTE(
+ID BIGINT AUTO_INCREMENT PRIMARY KEY, 
 NAME VARCHAR, 
 LASTNAME VARCHAR, 
 CPF VARCHAR, 
