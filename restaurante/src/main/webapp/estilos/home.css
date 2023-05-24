@@ -70,7 +70,7 @@ a {
     right: 0;
     z-index: -1;
     display: block;
-    background-image: url(".\webapp\img\fundo.jpg");
+    background-image: url("/img/fundo.jpg");
     object-fit: cover;
     height: 100%;
     width: 100%;

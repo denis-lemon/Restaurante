@@ -64,6 +64,7 @@ main{
     display:flex;
     justify-content: center;
     align-items: center;
+    min-height: 88.6vh;
 }
 
 .container-main{
@@ -116,5 +117,4 @@ main{
     font-size: 12pt;
     width: 100%;
     height: 10px;
-
 }
