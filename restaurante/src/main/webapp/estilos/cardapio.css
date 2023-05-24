@@ -60,12 +60,32 @@ a {
 }
 
 /*MAIN*/
+
+.fundo {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url("../img/fundo.jpg");
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(5px) brightness(0.80);
+    top: 5px;
+}
+
 #pagina{
     max-width: 700px;
     margin: 0 auto;
 }
 h1 {
-    color: #daa520;
+    color: #0f0f0f;
     margin-top: 30px;
 }
 hr{
