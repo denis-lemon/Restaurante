@@ -1,6 +1,7 @@
 package br.com.restaurante.dao;
 
 import br.com.restaurante.model.Employee;
+import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -13,13 +14,14 @@ public class EmployeeDao {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            String hashPassword = BCrypt.hashpw(employee.getPassword(), BCrypt.gensalt());
 
 
             preparedStatement.setString(1, employee.getName());
             preparedStatement.setString(2, employee.getLastName());
             preparedStatement.setString(3, employee.getCpf());
             preparedStatement.setString(4, employee.getEmail());
-            preparedStatement.setString(5,employee.getPassword());
+            preparedStatement.setString(5, hashPassword);
 
 
             preparedStatement.execute();

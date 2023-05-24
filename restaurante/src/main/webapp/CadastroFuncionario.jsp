@@ -11,15 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="estilos/cadastro.css">
     <title>Cadastro de Funcionários</title>
-     <script>
-          // Função para exibir o alerta com a mensagem de erro
-          function exibirAlertaErro() {
-              var mensagemErro = '<%= request.getAttribute("mensagemErro") %>';
-              if (mensagemErro && mensagemErro.trim() !== '') {
-                  alert(mensagemErro);
-              }
-          }
-         </script>
+
 </head>
 
 <body>

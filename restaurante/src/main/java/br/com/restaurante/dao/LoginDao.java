@@ -3,6 +3,7 @@ package br.com.restaurante.dao;
 
 import br.com.restaurante.model.Client;
 import br.com.restaurante.model.Employee;
+import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.*;
 
@@ -27,8 +28,8 @@ public class LoginDao {
 
             while(rs.next()) {
 
-                String password = rs.getString("password");
-                if(password.equals(client.getPassword())){
+                String hashPassword = rs.getString("password");
+                if(BCrypt.checkpw(client.getPassword(), hashPassword)){
                     return true;
                 }
             }
@@ -58,8 +59,8 @@ public class LoginDao {
 
             while(rs.next()) {
 
-                String password = rs.getString("password");
-                if(password.equals(employee.getPassword())){
+                String hashPassword = rs.getString("password");
+                if(BCrypt.checkpw(employee.getPassword(), hashPassword)){
                     return true;
                 }
             }
