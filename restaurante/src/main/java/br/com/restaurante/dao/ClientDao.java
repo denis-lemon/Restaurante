@@ -1,7 +1,8 @@
 package br.com.restaurante.dao;
 
 import br.com.restaurante.model.Client;
-import br.com.restaurante.model.Reserva;
+import org.mindrot.jbcrypt.BCrypt;
+
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -16,13 +17,13 @@ public class ClientDao {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
-
+            String hashPassword = BCrypt.hashpw(client.getPassword(), BCrypt.gensalt());
 
             preparedStatement.setString(1, client.getName());
             preparedStatement.setString(2, client.getLastName());
             preparedStatement.setString(3, client.getCpf());
             preparedStatement.setString(4, client.getEmail());
-            preparedStatement.setString(5, client.getPassword());
+            preparedStatement.setString(5, hashPassword);
 
             preparedStatement.execute();
             connection.close();
@@ -30,7 +31,7 @@ public class ClientDao {
             System.out.println("success in connection");
         } catch (Exception e) {
 
-            System.out.println("fail in connection" + e.getMessage());
+            System.out.println("falha ao inserir" +e);
             e.printStackTrace();
         }
     }

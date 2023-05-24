@@ -1,3 +1,36 @@
+<<<<<<< HEAD
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\ListCardapioServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\ListPratoPrincipalServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\UpdateStatusReserva.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\DeleteReservaServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\CreateLoginServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\dao\ClientDao.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\model\Employee.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\ListCarneServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\CreateClientServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\ListClientesServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\CreatePratoServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\LogoutServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\CreateEmployeeServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\dao\PratoDao.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\PerfilServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\dao\ReservaDao.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\ListAcompanhamentoServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\ListBebidaServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\ListReservaServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\ListEntradaServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\DeleteEmployee.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\ListSobremesaServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\model\Prato.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\Filtro.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\dao\LoginDao.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\DeletePratoServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\dao\EmployeeDao.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\model\Client.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\model\Reserva.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\CreateReservaServlet.java
+C:\Users\ciluc\OneDrive\Documentos\ADS\3 semestre\PI3\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\ListFuncionariosServlet.java
+=======
 D:\Coding\RestaurantePI\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\CreateReservaServlet.java
 D:\Coding\RestaurantePI\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\ListSobremesaServlet.java
 D:\Coding\RestaurantePI\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\CreateEmployeeServlet.java
@@ -29,3 +62,4 @@ D:\Coding\RestaurantePI\Restaurante\restaurante\src\main\java\br\com\restaurante
 D:\Coding\RestaurantePI\Restaurante\restaurante\src\main\java\br\com\restaurante\dao\PratoDao.java
 D:\Coding\RestaurantePI\Restaurante\restaurante\src\main\java\br\com\restaurante\dao\ReservaDao.java
 D:\Coding\RestaurantePI\Restaurante\restaurante\src\main\java\br\com\restaurante\servlet\ListEntradaServlet.java
+>>>>>>> 657669dc550c8f7e9ae13b6669ce01fe42ab209a
