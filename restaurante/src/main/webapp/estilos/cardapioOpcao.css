@@ -67,6 +67,25 @@ main{
     min-height: 88.6vh;
 }
 
+.fundo {
+     content: "";
+     position: fixed;
+     left: 0;
+     right: 0;
+     z-index: -1;
+     display: block;
+     background-image: url("../img/fundo.jpg");
+     object-fit: cover;
+     height: 100%;
+     width: 100%;
+     -webkit-filter: blur(10px);
+     -moz-filter: blur(10px);
+     -o-filter: blur(10px);
+     -ms-filter: blur(10px);
+     filter: blur(5px) brightness(0.80);
+     top: 5px;
+ }
+
 .container-main{
     display:flex;
     margin: 40px;

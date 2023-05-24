@@ -41,6 +41,7 @@
 </header>
 
 <main>
+    <div class="fundo"></div>
     <div class="container-main">
         <div class="menu-opcao">
             <form action="/listar-entradas" method="get">
