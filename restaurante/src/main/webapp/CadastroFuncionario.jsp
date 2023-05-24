@@ -1,3 +1,6 @@
+<%@page import="br.com.restaurante.model.Employee"%>
+<%@page language="java" contentType="text/html; charset-UTF-8" pageEncoding="UTF-8"%>
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -8,6 +11,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="estilos/cadastro.css">
     <title>Cadastro de Funcionários</title>
+     <script>
+          // Função para exibir o alerta com a mensagem de erro
+          function exibirAlertaErro() {
+              var mensagemErro = '<%= request.getAttribute("mensagemErro") %>';
+              if (mensagemErro && mensagemErro.trim() !== '') {
+                  alert(mensagemErro);
+              }
+          }
+         </script>
 </head>
 
 <body>
@@ -39,16 +51,16 @@
     <div class="container">
         <div class="card">
             <h2>Cadastro de Funcionários</h2>
-            <form action="/create-employee" method="post" >
+            <form action="create-employee" method="post" >
                 <div class="label-float">
                     <label for="name">Nome:</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" maxlength ="30" required>
                     <label for="lastName">Sobrenome:</label>
-                    <input type="text" name="lastName" id="lastName">
+                    <input type="text" name="lastName" id="lastName" maxlength="100" required>
                     <label for="name">Cpf:</label>
-                    <input type="text" name="cpf" id="cpf">
+                    <input type="text" name="cpf" id="cpf" maxlength="11" pattern="[0-9]{11}" required>
                     <label for="email">Email:</label><br>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" maxlength="100" required>
                     <label for="password">Senha:</label>
                     <input type="password" name="password" id="password">
                 </div>
