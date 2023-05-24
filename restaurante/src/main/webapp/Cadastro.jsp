@@ -1,8 +1,5 @@
 <%@page import="br.com.restaurante.model.Client"%>
 <%@page language="java" contentType="text/html; charset-UTF-8" pageEncoding="UTF-8"%>
-<% if (request.getAttribute("mensagemErro") != null) { %>
-              <p style="color: red;"><%= request.getAttribute("mensagemErro").toString() %></p>
-          <% } %>
 
 <!doctype html>
 <html lang="pt-br">
@@ -78,8 +75,6 @@
         <div class="justify-center">
           <hr>
         </div>
-
-
       </form>
     </div>
   </div>

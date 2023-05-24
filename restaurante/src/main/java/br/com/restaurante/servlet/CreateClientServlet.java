@@ -74,8 +74,6 @@ public class CreateClientServlet extends HttpServlet {
         if (password.length() < 8 || !password.matches("^(?=.*[A-Za-z])(?=.*\\d)(?=.*\\.).+$")) {
             mensagemErro.add ("A senha deve ter no mínimo 8 caracteres, contendo pelo menos uma letra, um número e um ponto.");
         }
-
-
         return mensagemErro;
-}
+    }
 }
