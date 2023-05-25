@@ -18,9 +18,11 @@ public class PerfilServlet extends HttpServlet {
 
         try {
 
+
             String emailCliente = (String) req.getSession().getAttribute("email");
 
             if(emailCliente !=null) {
+
                 Client cliente = new ClientDao().selecionarCliente(emailCliente);
 
                 req.setAttribute("cliente", cliente);
