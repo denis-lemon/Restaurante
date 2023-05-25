@@ -31,7 +31,7 @@ public class ClientDao {
             System.out.println("success in connection");
         } catch (Exception e) {
 
-            System.out.println("falha ao inserir" +e);
+            System.out.println("falha ao inserir" + e);
             e.printStackTrace();
         }
     }
@@ -112,7 +112,7 @@ public class ClientDao {
 
             connection.close();
 
-        } catch(Exception e) {
+        } catch (Exception e) {
             System.out.println(e);
         }
 
@@ -140,7 +140,64 @@ public class ClientDao {
         }
 
         return clienteId;
+    }
 
+    public static boolean updateCliente(Client cliente) {
+
+        String SQL = "UPDATE CLIENTE SET NAME = ?, LASTNAME = ?,  EMAIL = ?, PASSWORD = ? WHERE ID = ?";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, cliente.getName());
+            preparedStatement.setString(2, cliente.getLastName());
+            preparedStatement.setString(3, cliente.getEmail());
+            preparedStatement.setString(4, cliente.getPassword());
+            preparedStatement.setString(5, cliente.getId());
+
+            int linhasAfetadas = preparedStatement.executeUpdate();
+
+            connection.close();
+
+            return linhasAfetadas > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
 
     }
+
+    public static Client getClienteByEmail(String email) {
+
+        String SQL = "SELECT * FROM CLIENTE WHERE EMAIL = ?";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, email);
+
+            ResultSet rs = preparedStatement.executeQuery();
+
+            if (rs.next()) {
+                String id = rs.getString("id");
+                String name = rs.getString("name");
+                String cpf = rs.getString("cpf");
+                String emailCliente = rs.getString("email");
+                String password = rs.getString("password");
+
+                return new Client(id, name, cpf, emailCliente, password);
+
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+
+    }
+
 }
+

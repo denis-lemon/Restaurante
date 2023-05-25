@@ -8,6 +8,7 @@ br\com\restaurante\dao\ReservaDao.class
 br\com\restaurante\model\Client.class
 br\com\restaurante\servlet\ListPratoPrincipalServlet.class
 br\com\restaurante\servlet\ListBebidaServlet.class
+br\com\restaurante\servlet\UpdateClient.class
 br\com\restaurante\servlet\ListEntradaServlet.class
 br\com\restaurante\dao\PratoDao.class
 br\com\restaurante\servlet\DeletePratoServlet.class
