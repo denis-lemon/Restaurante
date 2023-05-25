@@ -1,4 +1,17 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
+#cadastro{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    gap: 2em;
+}
+#cadastro div{
+    margin: 10px;
+}
 div.container{
     text-align: center;
 }
@@ -8,6 +21,7 @@ h1 {
 }
 .tabela, th, tr, td {
     border: 1px solid black;
+    border-collapse: collapse;
 }
 .tabela{
     min-width: 650px;
@@ -24,9 +38,6 @@ h1 {
 #tabela td {
 	border: 1px solid #ddd;
 	padding: 10px;
-}
-td button{
-    background-color: ;
 }
 
 

@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30d5d89a-b795-4c97-828d-13c575932490" name="Changes" comment="">
+    <list default="true" id="51604350-ba9a-4bef-a1a4-e0e3227d1788" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/CardapioEdit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/CardapioEdit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Entrada.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Entrada.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/cardapioOpcao.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/cardapioOpcao.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/listCardapio.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/listCardapio.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
@@ -67,7 +68,22 @@
     <configuration name="Restaurante [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="-Dfile.encoding=UTF-8" />
+          </MavenRunnerSettings>
+        </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
             <option name="profiles">
@@ -116,5 +132,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/PratoDao.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreatePratoServlet.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
