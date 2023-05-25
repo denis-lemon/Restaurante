@@ -102,8 +102,9 @@ margin-left: 150px;
 
 .mr-100 {
     margin-right: 150px;
-    margin-top: 50px;
-    border: 1px solid #000;
+    margin-top: 150px;
+    border: 2px solid #000;
+    background-color: #D3D3D3;
 }
 
 h2 {
@@ -125,12 +126,27 @@ margin-right: 100px;
 }
 
 .mr-70 {
-margin-left: 150px;
+margin: auto;
 }
 #extra{
 margin-left: 70px;
-
 }
+
+.fila-de-espera{
+    margin-top: auto;
+    background-color: #D3D3D3;
+    padding: 45px;
+    border-radius: 2em;
+    border: black 2px solid;
+}
+
+.fila-de-espera .button{
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 150px;
+    line-height: 20px;
+}
+
 .button {
 line-height: 30px;
 margin-left: 200px;
