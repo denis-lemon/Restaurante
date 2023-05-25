@@ -56,7 +56,7 @@
           <label for="email">Email:</label><br>
           <input type="email" name="email" id="email" maxlength="100" required>
           <label for="password">Senha:</label>
-          <input type="password" name="password" id="password" minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*\.).+$" required>
+          <input type="password" name="password" id="password" minlength="8" r\equired>
 
         </div>
         <div class="justify-center">

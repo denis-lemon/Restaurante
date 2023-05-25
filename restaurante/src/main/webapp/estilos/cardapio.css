@@ -5,11 +5,11 @@
 }
 
 body {
-    background-color: #ffffec;
     overflow-x: hidden;
 }
 
 /*CABEÇALHO*/
+
 .containerHeader {
     background-color: #6B1108;
     font-weight: bold;
@@ -20,11 +20,12 @@ body {
     height: 60px;
 }
 
-.logo {
+.logo{
     width: 15vh;
     margin-top: -67px;
     margin-right: 17px;
 }
+
 
 a:hover {
     color: #ffffff;
@@ -114,9 +115,6 @@ hr{
     transition: .3s;
 }
 
-.reserva{
-    background-color: #ffffec;
-}
 
 /*FOOTER*/
 .Rodape {
