@@ -4,6 +4,7 @@ import br.com.restaurante.model.Reserva;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class ReservaDao {
@@ -139,6 +140,40 @@ public class ReservaDao {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public List<Reserva> listarReservasPorCliente(String email) {
+
+        List<Reserva> reservas = new ArrayList<>();
+
+        String SQL = "SELECT * FROM RESERVAS WHERE EMAIL = ?";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setString(1, email);
+
+            ResultSet rs = preparedStatement.executeQuery();
+
+            while (rs.next()) {
+                Reserva reserva = new Reserva();
+                reserva.setId(rs.getString("id"));
+                reserva.setData(rs.getString("data"));
+                reserva.setHora(rs.getString("hora"));
+                reserva.setQntPessoas(rs.getString("qntpessoas"));
+                reserva.setAmbiente(rs.getString("ambiente"));
+                reserva.setObs(rs.getString("obs"));
+                reserva.setStatus(rs.getString("status"));
+                reserva.setClienteId(rs.getString("clienteid"));
+                reservas.add(reserva);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return reservas;
     }
 
 }

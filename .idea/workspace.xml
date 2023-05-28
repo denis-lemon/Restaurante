@@ -4,46 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51604350-ba9a-4bef-a1a4-e0e3227d1788" name="Changes" comment="">
+    <list default="true" id="6027791e-e94f-476b-b7e9-fac36dbfc7e4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/restaurante/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/CardapioEdit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/CardapioEdit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Entrada.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Entrada.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/cardapioOpcao.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/cardapioOpcao.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/listCardapio.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/listCardapio.css" afterDir="false" />
-=======
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Cadastro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Cadastro.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Cardapio.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Cardapio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Reserva.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Reserva.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/cardapio.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/cardapio.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/reserva.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/reserva.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ReservaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ReservaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/ListReservaServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/PerfilServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/PerfilServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilCliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilCliente.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/login.jsp" afterDir="false" />
-=======
-<<<<<<< Updated upstream
-=======
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ClientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ClientDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/UpdateClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/UpdateClient.java" afterDir="false" />
->>>>>>> Stashed changes
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/CardapioEdit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/CardapioEdit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Entrada.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Entrada.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilCliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilCliente.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/UpdateCliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/UpdateCliente.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/cardapioOpcao.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/cardapioOpcao.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/estilos/home.css" afterDir="false" />
-<<<<<<< Updated upstream
-=======
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ClientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ClientDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilCliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilCliente.jsp" afterDir="false" />
->>>>>>> Stashed changes
->>>>>>> 31048d641015363da89b9024eae1ea7e4f2ebd88
-      <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
->>>>>>> 0088bf488ae37fac566c720a056a8ad539275f37
-=======
->>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,16 +136,11 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-<<<<<<< Updated upstream
           <url>file://$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/PratoDao.java</url>
           <line>29</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreatePratoServlet.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="2" />
-=======
           <url>file://$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ClientDao.java</url>
           <line>146</line>
           <option name="timeStamp" value="35" />
@@ -236,7 +199,26 @@
           <url>file://$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ClientDao.java</url>
           <line>167</line>
           <option name="timeStamp" value="47" />
->>>>>>> Stashed changes
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ReservaDao.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ReservaDao.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ReservaDao.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ReservaDao.java</url>
+          <line>151</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
