@@ -144,25 +144,32 @@ public class ClientDao {
 
     public static boolean updateCliente(Client cliente) {
 
-        String SQL = "UPDATE CLIENTE SET NAME = ?, LASTNAME = ?,  EMAIL = ?, PASSWORD = ? WHERE ID = ?";
+        String SQL = "UPDATE CLIENTE SET NAME = ?,  EMAIL = ?, PASSWORD = ? WHERE ID = ?";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            String hashPassword = BCrypt.hashpw(cliente.getPassword(), BCrypt.gensalt());
+
 
             preparedStatement.setString(1, cliente.getName());
-            preparedStatement.setString(2, cliente.getLastName());
-            preparedStatement.setString(3, cliente.getEmail());
-            preparedStatement.setString(4, cliente.getPassword());
-            preparedStatement.setString(5, cliente.getId());
+            preparedStatement.setString(2, cliente.getEmail());
+            preparedStatement.setString(3, hashPassword);
+            preparedStatement.setString(4, cliente.getId());
 
             int linhasAfetadas = preparedStatement.executeUpdate();
 
+
+
             connection.close();
 
+
+            System.out.println("sucess");
             return linhasAfetadas > 0;
         } catch (SQLException e) {
             e.printStackTrace();
+
+            System.out.println("error");
             return false;
         }
 

@@ -40,14 +40,16 @@
 </header>
 <main>
     <h1>Atualizar Dados</h1>
-    <form name="perfil" action="update-cliente" method="get" enctype="multipart/form-data">
+    <form name="perfil" action="update-cliente" method="post" enctype="application/x-www-form-urlencoded">
         <div class="itemDados">
-            <label for="nome" type="text" class="campo">Nome:</label>
-            <input type="text" id="nome" name="nome" value="<%= cliente.getName() %>" required>
+            <label for="name" type="text" class="campo">Nome:</label>
+            <input type="text" id="name" name="name" value="<%= cliente.getName() %>" required>
             <label for="email" type="text" class="campo">E-mail:</label>
             <input type="email" id="email" name="email" value="<%= cliente.getEmail() %>" required>
-            <label for="senha" type="password" class="campo">Nova Senha:</label>
-            <input type="password" id="senha" name="senha" required>
+            <label for="password" type="password" class="campo">Nova Senha:</label>
+            <input type="password" id="password" name="password" value="<%=cliente.getPassword() %>" required>
+            <label for="id" type="text" class="campo">ID: </label>
+            <input type="text" id="id" name="id" value="<%=cliente.getId() %>" readonly>
             <button type="submit">Atualizar</button>
         </div>
     </form>

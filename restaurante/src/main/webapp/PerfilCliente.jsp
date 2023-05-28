@@ -49,8 +49,8 @@ Client cliente = (Client) request.getAttribute("cliente");
                          <label for="id" type="text" class="campo">ID:<%= cliente.getId() %> </label>
                             <label for="name" type="text" class="campo">Nome:<%= cliente.getName() %></label>
                             <label for="lastName" type="text" class="campo">Sobrenome:<%= cliente.getLastName() %></label>
-                            <label for="cpf" type="text" class="campo">CPF do titular:<%= cliente.getCpf() %></label>
-                            <label for="email" type="text" class="campo">RG do titular:<%= cliente.getEmail() %></label>
+                            <label for="cpf" type="text" class="campo">CPF:<%= cliente.getCpf() %></label>
+                            <label for="email" type="text" class="campo">Email:<%= cliente.getEmail() %></label>
                             <a id="button" href="/update-cliente?email=<%= cliente.getEmail() %>">Atualizar</a>
                         </div>
                         </div>
