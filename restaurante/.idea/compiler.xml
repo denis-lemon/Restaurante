@@ -12,6 +12,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Restaurante" />
+        <module name="restaurante" />
       </profile>
     </annotationProcessing>
   </component>

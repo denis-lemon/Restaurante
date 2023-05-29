@@ -11,10 +11,11 @@ public class Client {
 
     private String idReserva;
 
+
     public Client() {
     }
 
-    public Client( String name, String lastName, String cpf, String email, String password) {
+    public Client(String name, String lastName, String cpf, String email, String password) {
         this.name = name;
         this.lastName = lastName;
         this.cpf = cpf;
@@ -77,4 +78,6 @@ public class Client {
     public void setIdReserva(String idReserva) {
         this.idReserva = idReserva;
     }
+
+
 }

@@ -175,7 +175,8 @@ public class ClientDao {
 
     }
 
-    public static Client getClienteByEmail(String email) {
+    public static Client idCliente(String email) {
+
 
         String SQL = "SELECT * FROM CLIENTE WHERE EMAIL = ?";
 
@@ -183,28 +184,72 @@ public class ClientDao {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
+
+            Client cliente = new Client();
+
             preparedStatement.setString(1, email);
 
             ResultSet rs = preparedStatement.executeQuery();
+            if(rs.next()){
+            cliente.setId(rs.getString("id"));
+            cliente.setEmail(rs.getString("email"));
+            cliente.setPassword(rs.getString("password"));
 
-            if (rs.next()) {
-                String id = rs.getString("id");
-                String name = rs.getString("name");
-                String cpf = rs.getString("cpf");
-                String emailCliente = rs.getString("email");
-                String password = rs.getString("password");
 
-                return new Client(id, name, cpf, emailCliente, password);
+            return cliente;
 
             }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
+            connection.close();
+        }catch (SQLException e){
+        e.printStackTrace();
         }
-
         return null;
+    }
+    public void atualizar(Client client){
+        String SQL = "UPDATE CLIENTE SET PASSWORD = ? WHERE ID =?";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, client.getPassword());
+            preparedStatement.setString(2, client.getId());
+
+            preparedStatement.executeUpdate();
+
+            connection.close();
+
+        }catch (SQLException e){
+        e.printStackTrace();
+        }
+    }
+        public Client clienteId(String id) {
+            String SQL = "SELECT * FROM CLIENTE WHERE ID = ?";
+
+            try (Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+                 PreparedStatement preparedStatement = connection.prepareStatement(SQL)) {
+
+                preparedStatement.setString(1, id);
+                ResultSet rs = preparedStatement.executeQuery();
+
+                if (rs.next()) {
+                    Client client = new Client();
+                    client.setId(rs.getString("id"));
+                    client.setName(rs.getString("NAME"));
+                    client.setLastName(rs.getString("LASTNAME"));
+                    client.setCpf(rs.getString("CPF"));
+                    client.setEmail(rs.getString("EMAIL"));
+                    client.setPassword(rs.getString("PASSWORD"));
+
+                    return client;
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            return null;
+        }
 
     }
 
-}
 

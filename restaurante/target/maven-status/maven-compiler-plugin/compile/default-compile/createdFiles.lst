@@ -10,6 +10,7 @@ br\com\restaurante\servlet\ListPratoPrincipalServlet.class
 br\com\restaurante\servlet\ListBebidaServlet.class
 br\com\restaurante\servlet\UpdateClient.class
 br\com\restaurante\servlet\ListEntradaServlet.class
+br\com\restaurante\servlet\ResetSenhaServlet.class
 br\com\restaurante\dao\PratoDao.class
 br\com\restaurante\servlet\DeletePratoServlet.class
 br\com\restaurante\dao\ClientDao.class
@@ -17,11 +18,13 @@ br\com\restaurante\servlet\ListCarneServlet.class
 br\com\restaurante\servlet\CreatePratoServlet.class
 br\com\restaurante\servlet\LogoutServlet.class
 br\com\restaurante\servlet\CreateLoginServlet.class
+br\com\restaurante\servlet\EsqueceuSenhaServlet.class
 br\com\restaurante\servlet\ListCardapioServlet.class
 br\com\restaurante\servlet\ListFuncionariosServlet.class
 br\com\restaurante\servlet\DeleteReservaServlet.class
 br\com\restaurante\servlet\ListReservaServlet.class
 br\com\restaurante\model\Employee.class
+br\com\restaurante\servlet\EsqueceuSenhaServlet$1.class
 br\com\restaurante\servlet\PerfilServlet.class
 br\com\restaurante\servlet\ListAcompanhamentoServlet.class
 br\com\restaurante\servlet\ListClientesServlet.class
