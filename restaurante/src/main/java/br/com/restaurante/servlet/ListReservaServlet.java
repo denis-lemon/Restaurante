@@ -22,4 +22,5 @@ public class ListReservaServlet extends HttpServlet {
         req.setAttribute("reservas", reservas);
         req.getRequestDispatcher("ListaReservas.jsp").forward(req, resp);
     }
+
 }

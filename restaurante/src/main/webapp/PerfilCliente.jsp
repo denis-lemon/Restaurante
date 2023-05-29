@@ -1,9 +1,11 @@
 <%@page import="br.com.restaurante.model.Client"%>
+<%@page import="br.com.restaurante.model.Reserva"%>
 <%@page language="java" contentType="text/html; charset-UTF-8" pageEncoding="UTF-8"%>
 <%@page import="java.util.ArrayList"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
 Client cliente = (Client) request.getAttribute("cliente");
+ArrayList<Reserva> reservas = (ArrayList<Reserva>) request.getAttribute("reservas");
 %>
 
 <!DOCTYPE html>
@@ -16,22 +18,63 @@ Client cliente = (Client) request.getAttribute("cliente");
         </head>
 
         <body>
- <h1>User Profile</h1>
-    <form  name="perfil" action="perfil-cliente" method="get" enctype="multipart/form-data">
+        <header class="containerHeader">
+            <div>
+                <nav class="navCadastro">
+                    <ul>
+                        <li class="LoginECadastro"> Acesse seu <a href="login.jsp">Login</a></li>
+                        <li class="LoginECadastro"> ou <a href="Cadastro.html">Cadastre se</a></li>
+                    </ul>
+                </nav>
+                <nav class="navOpcoes">
+                    <ul>
+                        <li class="fonteCabecalho"><a href="home.html">Home</a></li>
+                        <li class="fonteCabecalho"><a href="Sobre.html">Sobre</a></li>
+                        <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
+                        <li class="fonteCabecalho"><a href="Reserva.jsp">Reservas</a></li>
+                    </ul>
+                </nav>
+                <nav class="reserva">
+                    <ul>
+                        <a href="home.html"><img class="logo" src="img/logo.png" alt="" srcset=""></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
 
-                        </div>
+ <h1>Meu Perfil</h1>
+    <form  name="perfil" action="perfil-cliente" method="post" enctype="multipart/form-data">
+
                         <div class="itemDados">
-                         <input type="text" class="campo" placeholder="ID:" value=<%= cliente.getId() %> readonly>
-                            <input type="text" class="campo" placeholder="Nome do titular:" value=<%= cliente.getName() %> readonly>
-                            <input type="text" class="campo" placeholder="Sobrenome : " value= <%= cliente.getLastName() %>  readonly >
-                            <input type="text" class="campo" placeholder="CPF do titular:" value= <%= cliente.getCpf() %>  readonly>
-                            <input type="text" class="campo" placeholder="RG do titular:" value= <%= cliente.getEmail() %>  readonly>
-                            <a id="button" href="#">Alterar senha</a>
-                        </div>
-                        </div>
+                         <label for="id" type="text" class="campo">ID:<%= cliente.getId() %> </label>
+                            <label for="name" type="text" class="campo">Nome:<%= cliente.getName() %></label>
+                            <label for="lastName" type="text" class="campo">Sobrenome:<%= cliente.getLastName() %></label>
+                            <label for="cpf" type="text" class="campo">CPF:<%= cliente.getCpf() %></label>
+                            <label for="email" type="text" class="campo">Email:<%= cliente.getEmail() %></label>
+                            <a id="button" href="/update-cliente?email=<%= cliente.getEmail() %>">Atualizar</a>
                         </div>
                         </form>
     <a href="logout">Logout</a>
+
+    <h2>Minhas Reservas</h2>
+    <% if (reservas != null) {  %>
+<% for (Reserva reserva : reservas) {  %>
+        <div class="itemDados">
+          <label for="id" type="text" class="campo">ID: <%=reserva.getId()%></label>
+          <label for="data" type="text" class="campo">Data: <%=reserva.getData()%></label>
+          <label for="hora" type="text" class="campo">Hora: <%=reserva.getHora()%></label>
+          <label for="qntPessoas" type="text" class="campo">Quantidade de Pessoas: <%=reserva.getQntPessoas()%></label>
+          <label for="ambiente" type="text" class="campo">Ambiente: <%=reserva.getAmbiente()%></label>
+          <label for="obs" type="text" class="campo">Observações: <%=reserva.getObs()%></label>
+          <label for="status" type="text" class="campo">Status: <%=reserva.getStatus()%></label>
+           <form action = "/delete-reserva" method ="post">
+                               <input type="hidden" name="id" value="<%=reserva.getId()%>"/>
+                               <button class="button2" type="submit">Cancelar</button>
+                               </form>
+       </div>
+     <% } %>
+     <% } %>
 </body>
 </html>
 

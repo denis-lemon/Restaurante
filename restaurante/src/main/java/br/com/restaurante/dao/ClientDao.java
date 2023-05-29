@@ -31,7 +31,7 @@ public class ClientDao {
             System.out.println("success in connection");
         } catch (Exception e) {
 
-            System.out.println("falha ao inserir" +e);
+            System.out.println("falha ao inserir" + e);
             e.printStackTrace();
         }
     }
@@ -112,7 +112,7 @@ public class ClientDao {
 
             connection.close();
 
-        } catch(Exception e) {
+        } catch (Exception e) {
             System.out.println(e);
         }
 
@@ -140,10 +140,43 @@ public class ClientDao {
         }
 
         return clienteId;
+    }
 
+    public static boolean updateCliente(Client cliente) {
+
+        String SQL = "UPDATE CLIENTE SET NAME = ?,  EMAIL = ?, PASSWORD = ? WHERE ID = ?";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            String hashPassword = BCrypt.hashpw(cliente.getPassword(), BCrypt.gensalt());
+
+
+            preparedStatement.setString(1, cliente.getName());
+            preparedStatement.setString(2, cliente.getEmail());
+            preparedStatement.setString(3, hashPassword);
+            preparedStatement.setString(4, cliente.getId());
+
+            int linhasAfetadas = preparedStatement.executeUpdate();
+
+
+
+            connection.close();
+
+
+            System.out.println("sucess");
+            return linhasAfetadas > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+
+            System.out.println("error");
+            return false;
+        }
 
     }
+
     public static Client idCliente(String email) {
+
 
         String SQL = "SELECT * FROM CLIENTE WHERE EMAIL = ?";
 
@@ -151,11 +184,12 @@ public class ClientDao {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
+
             Client cliente = new Client();
+
             preparedStatement.setString(1, email);
 
             ResultSet rs = preparedStatement.executeQuery();
-
             if(rs.next()){
             cliente.setId(rs.getString("id"));
             cliente.setEmail(rs.getString("email"));
@@ -217,4 +251,5 @@ public class ClientDao {
         }
 
     }
+
 
