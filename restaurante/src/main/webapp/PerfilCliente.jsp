@@ -15,6 +15,7 @@ ArrayList<Reserva> reservas = (ArrayList<Reserva>) request.getAttribute("reserva
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <title>Perfil</title>
+           <link rel="stylesheet" href="estilos/perfil-cliente.css">
         </head>
 
         <body>
@@ -41,40 +42,52 @@ ArrayList<Reserva> reservas = (ArrayList<Reserva>) request.getAttribute("reserva
                 </nav>
             </div>
         </header>
+        <div class="fundo"></div>
         <main>
-
- <h1>Meu Perfil</h1>
+            <div class="containerMain">
+ <div class="meuPerfil">
+ <h1>Meu Perfil: </h1>
     <form  name="perfil" action="perfil-cliente" method="post" enctype="multipart/form-data">
 
                         <div class="itemDados">
-                         <label for="id" type="text" class="campo">ID:<%= cliente.getId() %> </label>
-                            <label for="name" type="text" class="campo">Nome:<%= cliente.getName() %></label>
-                            <label for="lastName" type="text" class="campo">Sobrenome:<%= cliente.getLastName() %></label>
-                            <label for="cpf" type="text" class="campo">CPF:<%= cliente.getCpf() %></label>
-                            <label for="email" type="text" class="campo">Email:<%= cliente.getEmail() %></label>
-                            <a id="button" href="/update-cliente?email=<%= cliente.getEmail() %>">Atualizar</a>
+                         <label for="id" type="text" class="campo">ID: <%= cliente.getId() %><br> </label>
+                            <label for="name" type="text" class="campo">Nome: <%= cliente.getName() %> <%= cliente.getLastName() %><br></label>                           
+                            <label for="cpf" type="text" class="campo">CPF: <%= cliente.getCpf() %><br></label>
+                            <label for="email" type="text" class="campo">Email: <%= cliente.getEmail() %><br></label>
+                            <div class="button-end">
+                            <a href="/update-cliente?email=<%= cliente.getEmail() %>">Atualizar</a>
+                        </div>
                         </div>
                         </form>
-    <a href="logout">Logout</a>
-
-    <h2>Minhas Reservas</h2>
-    <% if (reservas != null) {  %>
+                        <div class="button-end">
+                        <a class="button-end" href="logout">Logout</a>
+                        </div>
+</div>
+<div class="minhaReserva">    
+<h1>Minhas Reservas: </h1>
+<% if (reservas != null) {  %>
 <% for (Reserva reserva : reservas) {  %>
-        <div class="itemDados">
-          <label for="id" type="text" class="campo">ID: <%=reserva.getId()%></label>
-          <label for="data" type="text" class="campo">Data: <%=reserva.getData()%></label>
-          <label for="hora" type="text" class="campo">Hora: <%=reserva.getHora()%></label>
-          <label for="qntPessoas" type="text" class="campo">Quantidade de Pessoas: <%=reserva.getQntPessoas()%></label>
-          <label for="ambiente" type="text" class="campo">Ambiente: <%=reserva.getAmbiente()%></label>
-          <label for="obs" type="text" class="campo">Observações: <%=reserva.getObs()%></label>
-          <label for="status" type="text" class="campo">Status: <%=reserva.getStatus()%></label>
+        <div class="itemDados2">
+          <label for="id" type="text" class="campo">ID: <%=reserva.getId()%><br></label>
+          <label for="data" type="text" class="campo">Data: <%=reserva.getData()%><br></label>
+          <label for="hora" type="text" class="campo">Hora: <%=reserva.getHora()%><br></label>
+          <label for="qntPessoas" type="text" class="campo">Quantidade de Pessoas: <%=reserva.getQntPessoas()%><br></label>
+          <label for="ambiente" type="text" class="campo">Ambiente: <%=reserva.getAmbiente()%><br></label>
+          <label for="obs" type="text" class="campo">Observações: <%=reserva.getObs()%><br></label>
+          <label for="status" type="text" class="campo">Status: <%=reserva.getStatus()%><br></label>
            <form action = "/delete-reserva" method ="post">
-                               <input type="hidden" name="id" value="<%=reserva.getId()%>"/>
-                               <button class="button2" type="submit">Cancelar</button>
-                               </form>
+           <input type="hidden" name="id" value="<%=reserva.getId()%>"/>
+           <button class="button2" type="submit">Cancelar</button>
+       </form>
        </div>
-     <% } %>
-     <% } %>
+    </div>
+</div>
+<% } %>
+<% } %>
+</main>
+<footer class="Rodape">
+    <h5>&copyTodos os direitos reservados</h5>
+</footer>
 </body>
 </html>
 

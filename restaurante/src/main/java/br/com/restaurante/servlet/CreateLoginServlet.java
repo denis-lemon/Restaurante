@@ -50,7 +50,7 @@ public class CreateLoginServlet extends HttpServlet {
 
         } else if (validoF) {
             request.getSession().setAttribute("email", email);
-            response.sendRedirect("CadastroFuncionario.jsp");
+            response.sendRedirect("/perfil-funcionario");
 
         } else{
             request.setAttribute("Error", "Usuário e/ou senha inválidos.");

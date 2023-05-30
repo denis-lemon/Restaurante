@@ -64,7 +64,6 @@ public class ClientDao {
                 c.setCpf(cpf);
                 c.setEmail(email);
 
-
             }
             System.out.println("sucess in Select * clientes");
             connection.close();
@@ -119,28 +118,6 @@ public class ClientDao {
         return cliente;
     }
 
-    public String getClientIdByEmail(String email) {
-
-        String clienteId = null;
-
-        String SQL = "SELECT ID FROM CLIENTE WHERE EMAIL = ?";
-
-        try {
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
-            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
-            preparedStatement.setString(1, email);
-
-            ResultSet rs = preparedStatement.executeQuery();
-
-            if (rs.next()) {
-                clienteId = rs.getString("id");
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return clienteId;
-    }
 
     public static boolean updateCliente(Client cliente) {
 
@@ -158,7 +135,6 @@ public class ClientDao {
             preparedStatement.setString(4, cliente.getId());
 
             int linhasAfetadas = preparedStatement.executeUpdate();
-
 
 
             connection.close();
@@ -190,22 +166,23 @@ public class ClientDao {
             preparedStatement.setString(1, email);
 
             ResultSet rs = preparedStatement.executeQuery();
-            if(rs.next()){
-            cliente.setId(rs.getString("id"));
-            cliente.setEmail(rs.getString("email"));
-            cliente.setPassword(rs.getString("password"));
+            if (rs.next()) {
+                cliente.setId(rs.getString("id"));
+                cliente.setEmail(rs.getString("email"));
+                cliente.setPassword(rs.getString("password"));
 
 
-            return cliente;
+                return cliente;
 
             }
             connection.close();
-        }catch (SQLException e){
-        e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return null;
     }
-    public void atualizar(Client client){
+
+    public void atualizar(Client client) {
         String SQL = "UPDATE CLIENTE SET PASSWORD = ? WHERE EMAIL =?";
 
         try {
@@ -219,10 +196,37 @@ public class ClientDao {
 
             connection.close();
 
-        }catch (Exception e){
-        e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
+
+    public Client clienteId(String id) {
+        String SQL = "SELECT * FROM CLIENTE WHERE ID = ?";
+
+        try (Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+             PreparedStatement preparedStatement = connection.prepareStatement(SQL)) {
+
+            preparedStatement.setString(1, id);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            if (rs.next()) {
+                Client client = new Client();
+                client.setId(rs.getString("id"));
+                client.setName(rs.getString("NAME"));
+                client.setLastName(rs.getString("LASTNAME"));
+                client.setCpf(rs.getString("CPF"));
+                client.setEmail(rs.getString("EMAIL"));
+                client.setPassword(rs.getString("PASSWORD"));
+
+                return client;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
+}
 
 
