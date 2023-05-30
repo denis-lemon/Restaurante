@@ -24,7 +24,8 @@ public class ResetSenhaServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String password = req.getParameter("password");
         String confirmPassword = req.getParameter("confirmPassword");
-        String clienteId = req.getParameter("clienteId");
+        String clienteEmail = req.getParameter("clienteEmail");
+
 
         if (!password.equals(confirmPassword)) {
             resp.sendRedirect("erro.html"); // Redirecionar para página de erro de senha não coincidente
@@ -33,14 +34,13 @@ public class ResetSenhaServlet extends HttpServlet {
         String hashPassword = BCrypt.hashpw(password, BCrypt.gensalt());
 
         ClientDao clientDao = new ClientDao();
-        Client client1 = clientDao.clienteId(clienteId);
-
-        if (client1 == null) {
-            resp.sendRedirect("erro.html"); // Redirecionar para página de erro de cliente não encontrado
-            return;
-        }
+        Client client1 = new Client();
+        client1.setEmail(clienteEmail);
         client1.setPassword(hashPassword);
+
         clientDao.atualizar(client1);
+
+
 
 
         resp.sendRedirect("sucesso.html"); // Redirecionar para página de sucesso de redefinição de senha
