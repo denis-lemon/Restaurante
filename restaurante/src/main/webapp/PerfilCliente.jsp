@@ -15,6 +15,7 @@ ArrayList<Reserva> reservas = (ArrayList<Reserva>) request.getAttribute("reserva
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <title>Perfil</title>
+           <link rel="stylesheet" href="estilos/perfil-cliente.css">
         </head>
 
         <body>
@@ -42,21 +43,22 @@ ArrayList<Reserva> reservas = (ArrayList<Reserva>) request.getAttribute("reserva
             </div>
         </header>
         <main>
-
+<div class="containerMain">
+ <div class="meuPerfil">
  <h1>Meu Perfil</h1>
     <form  name="perfil" action="perfil-cliente" method="post" enctype="multipart/form-data">
 
                         <div class="itemDados">
-                         <label for="id" type="text" class="campo">ID:<%= cliente.getId() %> </label>
-                            <label for="name" type="text" class="campo">Nome:<%= cliente.getName() %></label>
-                            <label for="lastName" type="text" class="campo">Sobrenome:<%= cliente.getLastName() %></label>
-                            <label for="cpf" type="text" class="campo">CPF:<%= cliente.getCpf() %></label>
-                            <label for="email" type="text" class="campo">Email:<%= cliente.getEmail() %></label>
-                            <a id="button" href="/update-cliente?email=<%= cliente.getEmail() %>">Atualizar</a>
+                         <label for="id" type="text" class="campo">ID:<%= cliente.getId() %><br> </label>
+                            <label for="name" type="text" class="campo">Nome:<%= cliente.getName() %><br></label>
+                            <label for="lastName" type="text" class="campo">Sobrenome:<%= cliente.getLastName() %><br></label>
+                            <label for="cpf" type="text" class="campo">CPF:<%= cliente.getCpf() %><br></label>
+                            <label for="email" type="text" class="campo">Email:<%= cliente.getEmail() %><br></label>
+                            <a class="button-end" href="/update-cliente?email=<%= cliente.getEmail() %>">Atualizar</a>
                         </div>
                         </form>
-    <a href="logout">Logout</a>
-
+    <a class="button-end" href="logout">Logout</a>
+</div>
     <h2>Minhas Reservas</h2>
     <% if (reservas != null) {  %>
 <% for (Reserva reserva : reservas) {  %>
@@ -73,6 +75,7 @@ ArrayList<Reserva> reservas = (ArrayList<Reserva>) request.getAttribute("reserva
            <button class="button2" type="submit">Cancelar</button>
        </form>
        </div>
+</div>
      <% } %>
      <% } %>
 </body>
