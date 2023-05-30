@@ -29,7 +29,7 @@
         <li class="fonteCabecalho"><a href="home.html">Home</a></li>
         <li class="fonteCabecalho"><a href="Sobre.html">Sobre</a></li>
         <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
-        <li class="fonteCabecalho"><a href="Reserva.html">Reservas</a></li>
+        <li class="fonteCabecalho"><a href="Reserva.jsp">Reservas</a></li>
       </ul>
     </nav>
     <nav class="reserva">
@@ -56,11 +56,8 @@
           <label for="email">Email:</label><br>
           <input type="email" name="email" id="email" maxlength="100" required>
           <label for="password">Senha:</label>
-<<<<<<< HEAD
-          <input type="password" name="password" id="password" minlength="8" r\equired>
-=======
           <input type="password" name="password" id="password" minlength="8" required>
->>>>>>> 0088bf488ae37fac566c720a056a8ad539275f37
+          <input type="password" name="password" id="password" minlength="8" required>
 
         </div>
         <div class="justify-center">

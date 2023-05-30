@@ -183,14 +183,14 @@ public class ClientDao {
     }
 
     public void atualizar(Client client) {
-        String SQL = "UPDATE CLIENTE SET PASSWORD = ? WHERE ID =?";
+        String SQL = "UPDATE CLIENTE SET PASSWORD = ? WHERE EMAIL =?";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
             preparedStatement.setString(1, client.getPassword());
-            preparedStatement.setString(2, client.getId());
+            preparedStatement.setString(2, client.getEmail());
 
             preparedStatement.executeUpdate();
 
@@ -227,7 +227,6 @@ public class ClientDao {
 
         return null;
     }
-
 }
 
 
