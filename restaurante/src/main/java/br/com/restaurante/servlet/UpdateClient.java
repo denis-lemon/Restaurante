@@ -30,7 +30,7 @@ public class UpdateClient extends HttpServlet {
                 req.getRequestDispatcher("UpdateCliente.jsp").forward(req, resp);
 
             } else {
-                resp.sendRedirect("/Home");
+                resp.sendRedirect("/perfil-cliente");
             }
 
         } else {

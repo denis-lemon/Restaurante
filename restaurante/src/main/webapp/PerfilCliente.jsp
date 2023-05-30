@@ -69,9 +69,9 @@ ArrayList<Reserva> reservas = (ArrayList<Reserva>) request.getAttribute("reserva
           <label for="obs" type="text" class="campo">Observações: <%=reserva.getObs()%></label>
           <label for="status" type="text" class="campo">Status: <%=reserva.getStatus()%></label>
            <form action = "/delete-reserva" method ="post">
-                               <input type="hidden" name="id" value="<%=reserva.getId()%>"/>
-                               <button class="button2" type="submit">Cancelar</button>
-                               </form>
+           <input type="hidden" name="id" value="<%=reserva.getId()%>"/>
+           <button class="button2" type="submit">Cancelar</button>
+       </form>
        </div>
      <% } %>
      <% } %>
