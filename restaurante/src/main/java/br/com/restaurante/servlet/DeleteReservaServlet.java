@@ -19,6 +19,6 @@ public class DeleteReservaServlet extends HttpServlet {
             ReservaDao reservaDao = new ReservaDao();
             reservaDao.deleteReserva(reservaId);
         }
-        resp.sendRedirect("/listar-reservas");
+        resp.sendRedirect("/perfil-cliente");
     }
 }
