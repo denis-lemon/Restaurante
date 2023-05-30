@@ -8,7 +8,8 @@
 <body>
 <h2>Redefinir Senha</h2>
 <form action="resetSenha" method="post">
-    <input type="hidden" name="id" value="${clienteId}">
+    <label for="clienteEmail">Email:</label><br>
+    <input type="email" name="clienteEmail" id="clienteEmail"><br>
     <label for="password">Nova Senha:</label><br>
     <input type="password" name="password" id="password"><br>
     <label for="confirmPassword">Confirmar Nova Senha:</label><br>

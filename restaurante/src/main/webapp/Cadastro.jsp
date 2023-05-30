@@ -56,11 +56,8 @@
           <label for="email">Email:</label><br>
           <input type="email" name="email" id="email" maxlength="100" required>
           <label for="password">Senha:</label>
-<<<<<<< HEAD
-          <input type="password" name="password" id="password" minlength="8" r\equired>
-=======
           <input type="password" name="password" id="password" minlength="8" required>
->>>>>>> 0088bf488ae37fac566c720a056a8ad539275f37
+          <input type="password" name="password" id="password" minlength="8" required>
 
         </div>
         <div class="justify-center">
