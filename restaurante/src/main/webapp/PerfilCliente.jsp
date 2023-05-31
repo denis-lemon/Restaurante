@@ -226,7 +226,7 @@ height: 15px;
     }
 
     .btn-style button{
-        
+        width: 50%;
     }
 
 /*RODAPÉ*/

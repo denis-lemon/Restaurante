@@ -45,7 +45,7 @@ Client cliente = (Client) request.getAttribute("cliente");
     </nav>
     <nav class="reserva">
       <ul>
-        <a href="home.html"><img class="logo" src="img/logo.png" alt="" srcset=""></a>
+        <a href="home.jsp"><img class="logo" src="img/logo.png" alt="" srcset=""></a>
       </ul>
     </nav>
   </div>

@@ -207,7 +207,7 @@ Employee funcionario = (Employee) request.getAttribute("funcionario");
         </nav>
         <nav class="navOpcoes">
             <ul>
-                <li class="fonteCabecalho"><a href="home.html">Home</a></li>
+                <li class="fonteCabecalho"><a href="home.jsp">Home</a></li>
                 <li class="fonteCabecalho"><a href="Sobre.html">Sobre</a></li>
                 <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
                 <li class="fonteCabecalho"><a href="Reserva.jsp">Reservas</a></li>
@@ -215,7 +215,7 @@ Employee funcionario = (Employee) request.getAttribute("funcionario");
         </nav>
         <nav class="reserva">
             <ul>
-                <a href="home.html"><img class="logo" src="img/logo.png" alt="" srcset=""></a>
+                <a href="home.jsp"><img class="logo" src="img/logo.png" alt="" srcset=""></a>
             </ul>
         </nav>
     </div>

@@ -89,8 +89,8 @@ right: 0;
 z-index: -1;
 display: block;
 background-image: url("/img/fundo.jpg");
-object-fit: cover;
-height: 100%;
+object-fit:fill;
+height: 120vh;
 width: 100%;
 -webkit-filter: blur(10px);
 -moz-filter: blur(10px);
@@ -184,7 +184,7 @@ bottom: 0;
                 </nav>
                 <nav class="navOpcoes">
                     <ul>
-                        <li class="fonteCabecalho"><a href="home.html">Home</a></li>
+                        <li class="fonteCabecalho"><a href="home.jsp">Home</a></li>
                         <li class="fonteCabecalho"><a href="Sobre.html">Sobre</a></li>
                         <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
                         <li class="fonteCabecalho"><a href="Reserva.jsp">Reservas</a></li>
@@ -192,13 +192,14 @@ bottom: 0;
                 </nav>
                 <nav class="reserva">
                     <ul>
-                        <a href="home.html"><img class="logo" src="img/logo.png" alt="" srcset=""></a>
+                        <a href="home.jsp"><img class="logo" src="img/logo.png" alt="" srcset=""></a>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
 <div class="containerMain">
+ <div class="fundo"></div>
  <h1>Meu Perfil</h1>
     <div class="meuPerfil">
     <form  name="perfil" action="perfil-funcionario" method="post" enctype="multipart/form-data">

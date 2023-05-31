@@ -78,8 +78,9 @@
         	background-color: #6B1108;;
         	color: #fff;
         }
+        
         #tabela tr td {
-            height: 30px
+            height: 30px;
         	padding: 10px;
         }
 
