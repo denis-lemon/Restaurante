@@ -230,9 +230,6 @@ Employee funcionario = (Employee) request.getAttribute("funcionario");
             <label for="name" type="text" class="campo">Nome:</label>
             <input type="text" id="name" name="name" value="<%= funcionario.getName() %>" required><br>
             <div class="gap"></div>
-            <label for="lastname" type="text" class="campo">Sobrenome:</label>
-            <input type="text" id="lastname" name="lastname" value="<%= funcionario.getLastName() %>" required><br>
-            <div class="gap"></div>
             <label for="email" type="text" class="campo">E-mail:</label>
             <input type="email" id="email" name="email" value="<%= funcionario.getEmail() %>" required><br>
             <div class="gap"></div>
@@ -245,7 +242,7 @@ Employee funcionario = (Employee) request.getAttribute("funcionario");
         </div>
     </div>
     </form>
-    <a class="btn-style"href="logout">Logout</a>
+    <a class="btn-style"href="/logout">Logout</a>
 </div>
 </main>
 <footer class="Rodape">

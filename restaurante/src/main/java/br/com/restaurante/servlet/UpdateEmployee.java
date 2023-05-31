@@ -42,14 +42,12 @@ public class UpdateEmployee extends HttpServlet {
         System.out.println("doPost() method called");
         String emailFuncionario = req.getParameter("email");
         String nomeFuncionario = req.getParameter("name");
-        String sobrenomeFuncionario = req.getParameter("lastName");
         String senhaFuncionario = req.getParameter("password");
         String idFuncionario = req.getParameter("id");
 
         Employee funcionario = new Employee();
 
         funcionario.setName(nomeFuncionario);
-        funcionario.setLastName(sobrenomeFuncionario);
         funcionario.setEmail(emailFuncionario);
         funcionario.setPassword(senhaFuncionario);
         funcionario.setId(idFuncionario);

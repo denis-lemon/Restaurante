@@ -147,7 +147,7 @@ public class EmployeeDao {
     }
 
     public static boolean updateFuncionario(Employee funcionario) {
-        String SQL = "UPDATE EMPLOYEE SET NAME = ?, LASTNAME = ?,  EMAIL = ?, PASSWORD = ? WHERE ID = ?";
+        String SQL = "UPDATE EMPLOYEE SET NAME = ?,  EMAIL = ?, PASSWORD = ? WHERE ID = ?";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -156,10 +156,9 @@ public class EmployeeDao {
 
 
             preparedStatement.setString(1, funcionario.getName());
-            preparedStatement.setString(2, funcionario.getLastName());
-            preparedStatement.setString(3, funcionario.getEmail());
-            preparedStatement.setString(4, hashPassword);
-            preparedStatement.setString(5, funcionario.getId());
+            preparedStatement.setString(2, funcionario.getEmail());
+            preparedStatement.setString(3, hashPassword);
+            preparedStatement.setString(4, funcionario.getId());
 
             int linhasAfetadas = preparedStatement.executeUpdate();
 

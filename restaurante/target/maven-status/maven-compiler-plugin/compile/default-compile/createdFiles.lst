@@ -31,6 +31,7 @@ br\com\restaurante\servlet\PerfilServlet.class
 br\com\restaurante\servlet\ListAcompanhamentoServlet.class
 br\com\restaurante\servlet\ListClientesServlet.class
 br\com\restaurante\servlet\Filtro.class
+br\com\restaurante\servlet\DeleteReservaFunc.class
 br\com\restaurante\servlet\CreateClientServlet.class
 br\com\restaurante\servlet\ListSobremesaServlet.class
 br\com\restaurante\servlet\UpdateStatusReserva.class

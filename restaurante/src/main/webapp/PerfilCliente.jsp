@@ -251,7 +251,7 @@ bottom: 0;
                     <ul>
                             <% if ( cliente != null) { %>
                             <label for="name" type="text" class="LoginECadastro" id="perfil" <li class="LoginECadastro"> Bem vindo! <%= cliente.getName() %> <%= cliente.getLastName() %></li></label>
-                            <li class="LoginECadastro" ><br>Acesse seu <a href="PerfilCliente.jsp">perfil</a></li>
+                            <li class="LoginECadastro" ><br>Acesse seu <a href="/perfil-cliente">perfil</a></li>
                             <% } else { %>
                              <ul>
                              <label for="name" type="text" class="loginECadastro"<li class="LoginECadastro"> Acesse seu <a href="login.jsp">Login</a></li></label>

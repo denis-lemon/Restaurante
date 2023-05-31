@@ -54,7 +54,7 @@ public class CreateReservaServlet extends HttpServlet {
             new ReservaDao().createReserva(reserva);
 
 
-            request.getRequestDispatcher("ReservaConcluida.html").forward(request, response);
+            request.getRequestDispatcher("/perfil-cliente").forward(request, response);
         } catch (Exception e) {
             System.out.println(e + "erro");
         }

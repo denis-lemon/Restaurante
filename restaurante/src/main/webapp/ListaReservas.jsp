@@ -55,7 +55,7 @@
                      <input type="hidden" name="id" value="<%=lista.get(i).getId()%>"/>
                      <button class="button1" type="submit">Confirmar</button>
                      </form>
-                     <form action = "/delete-reserva" method ="post">
+                     <form action = "/deletef-reserva" method ="post">
                      <input type="hidden" name="id" value="<%=lista.get(i).getId()%>"/>
                      <button class="button2" type="submit">Cancelar</button>
                      </form>
