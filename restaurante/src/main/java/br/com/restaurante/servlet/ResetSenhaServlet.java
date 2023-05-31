@@ -43,7 +43,7 @@ public class ResetSenhaServlet extends HttpServlet {
 
 
 
-        resp.sendRedirect("sucesso.html"); // Redirecionar para página de sucesso de redefinição de senha
+        resp.sendRedirect("sucessoSenha.html"); // Redirecionar para página de sucesso de redefinição de senha
     }
 }
 

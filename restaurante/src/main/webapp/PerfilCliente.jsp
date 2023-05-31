@@ -11,7 +11,7 @@ ArrayList<Reserva> reservas = (ArrayList<Reserva>) request.getAttribute("reserva
     
     <!DOCTYPE html>
     <html lang="PT-BR">
-        
+
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
