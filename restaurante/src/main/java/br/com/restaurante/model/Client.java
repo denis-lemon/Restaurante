@@ -8,10 +8,8 @@ public class Client {
     private String cpf;
     private String email;
     private String password;
-
-    private boolean senhaAtualizada;
-
     private String idReserva;
+    private boolean logado;
 
 
     public Client() {
@@ -23,14 +21,6 @@ public class Client {
         this.cpf = cpf;
         this.email = email;
         this.password = password;
-    }
-
-    public boolean isSenhaAtualizada() {
-        return senhaAtualizada;
-    }
-
-    public void setSenhaAtualizada(boolean senhaAtualizada) {
-        this.senhaAtualizada = senhaAtualizada;
     }
 
     public String getLastName() {
@@ -87,6 +77,9 @@ public class Client {
 
     public void setIdReserva(String idReserva) {
         this.idReserva = idReserva;
+    }
+    public boolean isLogado(){
+        return logado;
     }
 
 

@@ -200,33 +200,6 @@ public class ClientDao {
             e.printStackTrace();
         }
     }
-
-    public Client clienteId(String id) {
-        String SQL = "SELECT * FROM CLIENTE WHERE ID = ?";
-
-        try (Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
-             PreparedStatement preparedStatement = connection.prepareStatement(SQL)) {
-
-            preparedStatement.setString(1, id);
-            ResultSet rs = preparedStatement.executeQuery();
-
-            if (rs.next()) {
-                Client client = new Client();
-                client.setId(rs.getString("id"));
-                client.setName(rs.getString("NAME"));
-                client.setLastName(rs.getString("LASTNAME"));
-                client.setCpf(rs.getString("CPF"));
-                client.setEmail(rs.getString("EMAIL"));
-                client.setPassword(rs.getString("PASSWORD"));
-
-                return client;
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return null;
     }
-}
 
 
