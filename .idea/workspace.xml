@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6027791e-e94f-476b-b7e9-fac36dbfc7e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_2_1_214.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jasypt_jasypt_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mindrot_jbcrypt_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ClientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/ClientDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/dao/EmployeeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreateLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreateLoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/UpdateClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/UpdateClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Home2.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilCliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilCliente.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilFuncionario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilFuncionario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/UpdateCliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/UpdateCliente.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -124,12 +124,13 @@ color: #daa520;
 .meuPerfil {
 background-color: #6B1108;
 width: 100vh;
+height: 20vh;
 padding: 10px;
 border-radius: 15px;
 }
 
 .itemDados {
-line-height: 25px;
+line-height: 30px;
 color: #ffffff;
 font-weight: 600;
 }
@@ -174,14 +175,60 @@ float: left;
 padding: 5px;
 }
 
-label{
-font-family: sans-serif;
+#perfil{
+text-transform: capitalize;
 }
-
 
 .tit-reserva{
 height: 15px;
 }
+
+.btn-container{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 10%;
+    text-align: center;
+    top: 28vh;
+    left: 130vh;
+    gap: 5px;
+}
+
+.btn-style{
+    background-color: #daa520;
+    color: #6B1108;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    }
+
+    .btn-style:hover{
+        background-color: #bb8e1c;
+    }
+
+    .btn-style a{
+    color: #6B1108;
+    }
+
+     a {
+        color: #daa520;
+        text-decoration: none;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: #ffffff;
+    }
+
+    .btn-style button{
+        
+    }
+
 /*RODAPÉ*/
 .Rodape {
 background-color: #6B1108;
@@ -202,13 +249,20 @@ bottom: 0;
             <div>
                 <nav class="navCadastro">
                     <ul>
-                        <li class="LoginECadastro"> Acesse seu <a href="login.jsp">Login</a></li>
-                        <li class="LoginECadastro"> ou <a href="Cadastro.html">Cadastre se</a></li>
-                    </ul>
+                            <% if ( cliente != null) { %>
+                            <label for="name" type="text" class="LoginECadastro" id="perfil" <li class="LoginECadastro"> Bem vindo! <%= cliente.getName() %> <%= cliente.getLastName() %></li></label>
+                            <li class="LoginECadastro" ><br>Acesse seu <a href="PerfilCliente.jsp">perfil</a></li>
+                            <% } else { %>
+                             <ul>
+                             <label for="name" type="text" class="loginECadastro"<li class="LoginECadastro"> Acesse seu <a href="login.jsp">Login</a></li></label>
+                             <label for="name" type="text" class="loginECadastro" <li class="LoginECadastro"> ou <a href="Cadastro.jsp">Cadastre se</a></li></label>
+                             <ul>
+                            <% }; %>
+                          </ul>
                 </nav>
                 <nav class="navOpcoes">
                     <ul>
-                        <li class="fonteCabecalho"><a href="home.html">Home</a></li>
+                        <li class="fonteCabecalho"><a href="home.jsp">Home</a></li>
                         <li class="fonteCabecalho"><a href="Sobre.html">Sobre</a></li>
                         <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
                         <li class="fonteCabecalho"><a href="Reserva.jsp">Reservas</a></li>
@@ -216,7 +270,7 @@ bottom: 0;
                 </nav>
                 <nav class="reserva">
                     <ul>
-                        <a href="home.html"><img class="logo" src="img/logo.png" alt="" srcset=""></a>
+                        <a href="home.jsp"><img class="logo" src="img/logo.png" alt="" srcset=""></a>
                     </ul>
                 </nav>
             </div>
@@ -227,20 +281,21 @@ bottom: 0;
  <div class="meuPerfil">
  <h1>Meu Perfil: </h1>
     <form  name="perfil" action="perfil-cliente" method="post" enctype="multipart/form-data">
-
-                        <div class="itemDados">
-                         <label for="id" type="text" class="campo">ID: <%= cliente.getId() %><br> </label>
-                            <label for="name" type="text" class="campo">Nome: <%= cliente.getName() %> <%= cliente.getLastName() %><br></label>                           
-                            <label for="cpf" type="text" class="campo">CPF: <%= cliente.getCpf() %><br></label>
-                            <label for="email" type="text" class="campo">Email: <%= cliente.getEmail() %><br></label>
-                            <div class="button-end">
-                            <a href="/update-cliente?email=<%= cliente.getEmail() %>">Atualizar</a>
-                        </div>
-                        </div>
-                        </form>
-                        <div class="button-end">
-                        <a class="button-end" href="logout">Logout</a>
-                        </div>
+        <div class="itemDados">
+            <label for="id" type="text" class="campo">ID: <%= cliente.getId() %><br> </label>
+            <label for="name" type="text" class="campo">Nome: <%= cliente.getName() %> <%= cliente.getLastName() %><br></label>                                               <label for="cpf" type="text" class="campo">CPF: <%= cliente.getCpf() %><br></label>
+            <label for="email" type="text" class="campo">Email: <%= cliente.getEmail() %><br></label>
+                <div class="btn-container">
+                    <div class="btn-style">
+                        <a href="/update-cliente?email=<%= cliente.getEmail() %>">Atualizar</a>
+                    </div>
+                    <div class="btn-style">
+                        <a href="logout">Logout</a>
+                    </div>
+                </div>
+        </div>
+    </form>
+    
 </div>
 <div class="minhaReserva">    
 <h1 class="tit-reserva">Minhas Reservas: <br></h1>
@@ -257,7 +312,7 @@ bottom: 0;
         <label for="status" type="text" class="campo">Status: <%=reserva.getStatus()%><br></label>
          <form action = "/delete-reserva" method ="post">
          <input type="hidden" name="id" value="<%=reserva.getId()%>"/>
-         <button class="button2" type="submit">Cancelar</button>
+         <button class="btn-style" type="submit">Cancelar</button>
         </div>
         <% } %>
       </div>
