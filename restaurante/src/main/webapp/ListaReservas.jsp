@@ -64,5 +64,6 @@
                     <% } %>
                     </tbody>
                     </table>
+                        <a href="/perfil-funcionario">Voltar</a>
                       </body>
                     </html>

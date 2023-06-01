@@ -158,6 +158,7 @@
                 </tr>
             </c:forEach>
         </table>
+            <a href="/perfil-funcionario">Voltar</a>
     </div>
 </body>
 </html>

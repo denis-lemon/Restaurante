@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="6027791e-e94f-476b-b7e9-fac36dbfc7e4" name="Changes" comment="">
+    <list default="true" id="430e49a5-d530-4c93-998b-0917af8bb68e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreateReservaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/java/br/com/restaurante/servlet/CreateReservaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Acompanhamentos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Acompanhamentos.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Bebida.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Bebida.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/CardapioEdit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/CardapioEdit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Carnes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Carnes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Entrada.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Entrada.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/ListaReservas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/ListaReservas.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilCliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilCliente.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilFuncionario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/PerfilFuncionario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/PratoPrincipal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/PratoPrincipal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Reserva.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Reserva.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/ResetSenha.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/ResetSenha.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/Sobremesas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/Sobremesas.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
-=======
-    <list default="true" id="6027791e-e94f-476b-b7e9-fac36dbfc7e4" name="Changes" comment="" />
->>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

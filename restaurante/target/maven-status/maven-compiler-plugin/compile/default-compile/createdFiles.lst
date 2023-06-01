@@ -36,3 +36,4 @@ br\com\restaurante\servlet\CreateClientServlet.class
 br\com\restaurante\servlet\ListSobremesaServlet.class
 br\com\restaurante\servlet\UpdateStatusReserva.class
 br\com\restaurante\dao\LoginDao.class
+br\com\restaurante\servlet\Home.class

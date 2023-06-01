@@ -22,25 +22,25 @@ Client cliente = (Client) request.getAttribute("cliente");
 
 <header class="containerHeader">
   <div>
-    <nav class="navCadastro">
-      <ul>
-        <% if ( cliente != null) { %>
-        <label for="name" type="text" class="LoginECadastro"<li class="LoginECadastro">Bem vindo: <%=cliente.getName()%></li></label>
-        <li class="LoginECadastro"><Accesse seu <a href="PerfilCliente.jsp">perfil</a></li>
-        <% } else { %>
-         <ul>
-         <label for="name" type="text" class="loginECadastro"<li class="LoginECadastro"> Acesse seu <a href="login.jsp">Login</a></li></label>
-         <label for="name" type="text" class="loginECadastro" <li class="LoginECadastro"> ou <a href="Cadastro.jsp">Cadastre se</a></li></label>
-         <ul>
-        <% }; %>
-      </ul>
-    </nav>
+        <nav class="navCadastro">
+                    <ul>
+                        <%-- Verifica se o cliente está logado --%>
+                        <% if (cliente != null) { %>
+                            <li class="LoginECadastro">Bem vindo! <%= cliente.getName() %> <%= cliente.getLastName() %></li>
+                            <li class="LoginECadastro">Acesse seu <a href="/perfil-cliente">perfil</a></li>
+                        <% } else { %>
+                            <li class="LoginECadastro">Acesse seu <a href="login.jsp">Login</a></li>
+                            <li class="LoginECadastro">ou <a href="Cadastro.jsp">Cadastre-se</a></li>
+                        <% } %>
+                    </ul>
+                </nav>
     <nav class="navOpcoes">
       <ul>
         <li class="fonteCabecalho"><a href="home.jsp">Home</a></li>
         <li class="fonteCabecalho"><a href="Sobre.html">Sobre</a></li>
         <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
         <li class="fonteCabecalho"><a href="Reserva.jsp">Reservas</a></li>
+
       </ul>
     </nav>
     <nav class="reserva">

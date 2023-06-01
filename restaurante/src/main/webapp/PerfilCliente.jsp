@@ -248,21 +248,20 @@ bottom: 0;
         <header class="containerHeader">
             <div>
                 <nav class="navCadastro">
-                    <ul>
-                            <% if ( cliente != null) { %>
-                            <label for="name" type="text" class="LoginECadastro" id="perfil" <li class="LoginECadastro"> Bem vindo! <%= cliente.getName() %> <%= cliente.getLastName() %></li></label>
-                            <li class="LoginECadastro" ><br>Acesse seu <a href="/perfil-cliente">perfil</a></li>
-                            <% } else { %>
-                             <ul>
-                             <label for="name" type="text" class="loginECadastro"<li class="LoginECadastro"> Acesse seu <a href="login.jsp">Login</a></li></label>
-                             <label for="name" type="text" class="loginECadastro" <li class="LoginECadastro"> ou <a href="Cadastro.jsp">Cadastre se</a></li></label>
-                             <ul>
-                            <% }; %>
-                          </ul>
-                </nav>
+                            <ul>
+                                <%-- Verifica se o cliente está logado --%>
+                                <% if (cliente != null) { %>
+                                    <li class="LoginECadastro">Bem vindo! <%= cliente.getName() %> <%= cliente.getLastName() %></li>
+                                    <li class="LoginECadastro">Acesse seu <a href="/perfil-cliente">perfil</a></li>
+                                <% } else { %>
+                                    <li class="LoginECadastro">Acesse seu <a href="login.jsp">Login</a></li>
+                                    <li class="LoginECadastro">ou <a href="Cadastro.jsp">Cadastre-se</a></li>
+                                <% } %>
+                            </ul>
+                        </nav>
                 <nav class="navOpcoes">
                     <ul>
-                        <li class="fonteCabecalho"><a href="home.jsp">Home</a></li>
+                        <li class="fonteCabecalho"><a href="/home">Home</a></li>
                         <li class="fonteCabecalho"><a href="Sobre.html">Sobre</a></li>
                         <li class="fonteCabecalho"><a href="Cardapio.html">Cardápio</a></li>
                         <li class="fonteCabecalho"><a href="Reserva.jsp">Reservas</a></li>
