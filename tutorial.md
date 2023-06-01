@@ -65,5 +65,7 @@ EMAIL VARCHAR,
 PASSWORD VARCHAR
 )
 
-###Pagina Login (futuramente)
-Onde o usuário irá se logar após o cadastro. 
+### Pagina Login
+Onde o cliente irá logar após o cadastro, irá conseguir realizar a reserva no restaurante e visualizar a mesma e cancelar
+Se caso for o funcionário logado, ele irá conseguir visualizar a reserva feita pelo cliente, confirmar e cancelar a reserva e cadastrar novos funcionários
+
